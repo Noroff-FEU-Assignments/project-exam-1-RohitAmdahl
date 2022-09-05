@@ -25,7 +25,7 @@ font-family: 'Poppins',Arial, Helvetica, sans-serif;
   --cta-small-shadow: #444444;
   --cta-small-button-border: #06019D;
   --box-shadow-button: -6px -4px 0px; 
-  --main-heading :3.1em;
+  --main-heading :3.5em;
   
 }
 
@@ -63,7 +63,7 @@ a{
 }
 
 #search-cta{
-  padding: 3px 10px;
+  padding: 5px 13px;
   background: var(--button-background);
   border: 2px solid var(--cta-small-button-border);
   cursor: pointer;
@@ -102,5 +102,12 @@ nav{
 
 /*----------------------------- header finished .main section starts from here --------------------------------- */
 .grids{
-  background-image: url(images/grids.png);
+  background-image: url(/images/grids.png);
+}
+h1 {
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  padding: 150px;
+  font-size: var(--main-heading);
 }
