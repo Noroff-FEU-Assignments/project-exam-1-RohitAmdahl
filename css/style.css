@@ -6,14 +6,15 @@
   padding: 0;
 }
 
-
 body{
 font-family: 'Poppins',Arial, Helvetica, sans-serif;
+
 }
 
 :root {
   --text_background-color: #F5F5F5;
   --heading-background-color: #DEDEDE;
+  --button-background: #ffffff;
   --picture-shadow: #F4757D;
   --footer-contact-color-shadow: #EE5F5F;
   --footer-contact-color:#EDFF00;
@@ -23,6 +24,54 @@ font-family: 'Poppins',Arial, Helvetica, sans-serif;
   --main-blog-picture-shadow: #FFD484;
   --cta-small-shadow: #444444;
   --cta-small-button-border: #06019D;
+  --box-shadow-button: -6px -4px 0px; 
+  
+}
+
+/*----------------------------- header--------------------------------- */
+
+.logo{
+  width: 100%;
+  max-width: 100px;
+  margin: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--paragraph-heading-font-color);
+  padding-right: 15px;
+}
+
+#burger-nav{
+  display: none;
+}
+
+#search-cta{
+  padding: 3px 10px;
+  background: var(--button-background);
+  border: 2px solid var(--cta-small-button-border);
+  cursor: pointer;
+  margin-left: 15px;
+  
 }
 
 
+ #search-cta:hover{
+   box-shadow:var(--box-shadow-button);
+  transition: ease-in 0.4s;
+} 
+
+header{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+
+
+/*----------------------------- header finished --------------------------------- */
