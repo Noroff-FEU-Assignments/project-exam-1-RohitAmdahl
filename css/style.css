@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
 
 *{
-  box-sizing: border-box;
+   box-sizing: border-box; 
   margin: 0;
   padding: 0;
 }
@@ -39,9 +39,21 @@ font-family: 'Poppins',Arial, Helvetica, sans-serif;
 a{
   text-decoration: none;
   color: var(--paragraph-heading-font-color);
-  padding-right: 15px;
+  margin: 0px 10px;
   font-size: 14px;
 }
+
+.active{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  font-weight: bold;     
+}
+
+.active:hover{
+  transition: ease-in 0.3ms;
+  color: var(--paragraph-heading-font-color);
+}
+
 
 #burger-nav{
   display: none;
@@ -52,7 +64,7 @@ a{
   background: var(--button-background);
   border: 2px solid var(--cta-small-button-border);
   cursor: pointer;
-  margin-left: 15px; 
+  margin-left: 4px; 
 }
 
 .search-container_mobile{
