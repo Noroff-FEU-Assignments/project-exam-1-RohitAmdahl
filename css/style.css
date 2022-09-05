@@ -33,13 +33,14 @@ font-family: 'Poppins',Arial, Helvetica, sans-serif;
 .logo{
   width: 100%;
   max-width: 100px;
-  margin: 25px;
+  margin-top: 10px;
 }
 
 a{
   text-decoration: none;
   color: var(--paragraph-heading-font-color);
   padding-right: 15px;
+  font-size: 14px;
 }
 
 #burger-nav{
@@ -64,6 +65,7 @@ a{
 header{
   display: flex;
   justify-content: space-around;
+  background-color: var(--heading-background-color);
 }
 
 nav{
