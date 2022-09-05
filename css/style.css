@@ -25,6 +25,7 @@ font-family: 'Poppins',Arial, Helvetica, sans-serif;
   --cta-small-shadow: #444444;
   --cta-small-button-border: #06019D;
   --box-shadow-button: -6px -4px 0px; 
+  --main-heading :3.1em;
   
 }
 
@@ -32,7 +33,7 @@ font-family: 'Poppins',Arial, Helvetica, sans-serif;
 
 .logo{
   width: 100%;
-  max-width: 100px;
+  max-width: 150px;
   margin-top: 10px;
 }
 
@@ -40,18 +41,20 @@ a{
   text-decoration: none;
   color: var(--paragraph-heading-font-color);
   margin: 0px 10px;
-  font-size: 14px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .active{
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  font-weight: bold;     
+  border-bottom-width: 2px;
+  border-bottom-style: solid var(--paragraph-heading-font-color);
+      
 }
 
 .active:hover{
-  transition: ease-in 0.3ms;
+  /* transition: ease-in 0.3ms; */
   color: var(--paragraph-heading-font-color);
+  border-bottom-width: 2px;
 }
 
 
@@ -67,6 +70,12 @@ a{
   margin-left: 4px; 
 }
 
+#search-box{
+  border: 2px solid var(--cta-small-button-border);
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
 .search-container_mobile{
   display: none;
 }
@@ -80,6 +89,7 @@ header{
   display: flex;
   justify-content: space-around;
   background-color: var(--heading-background-color);
+  padding: 12px 0px;
 }
 
 nav{
@@ -90,4 +100,7 @@ nav{
 
 
 
-/*----------------------------- header finished --------------------------------- */
+/*----------------------------- header finished .main section starts from here --------------------------------- */
+.grids{
+  background-image: url(images/grids.png);
+}
