@@ -52,10 +52,12 @@ a{
   background: var(--button-background);
   border: 2px solid var(--cta-small-button-border);
   cursor: pointer;
-  margin-left: 15px;
-  
+  margin-left: 15px; 
 }
 
+.search-container_mobile{
+  display: none;
+}
 
  #search-cta:hover{
    box-shadow:var(--box-shadow-button);
