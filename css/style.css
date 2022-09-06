@@ -178,11 +178,15 @@ text-align: right;
   /* grid-template-rows:1fr 1fr 1fr; */
   max-width: 800px;
   margin: 0 auto;
-  /* grid-template-areas:
-  " hotel cabin main"
-  "section pool ifc" */
+   grid-template-areas:
+  " main cabin hotel"
+  " pool ifc" 
 }
 
+/* .cards-5 {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+} */
 /* .cards-1{
   grid-area: main ;
 }
