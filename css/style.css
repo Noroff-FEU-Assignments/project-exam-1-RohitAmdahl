@@ -29,6 +29,25 @@ font-family: 'Poppins',Arial, Helvetica, sans-serif;
   
 }
 
+.loader{
+  color: var(--footer-contact-color-shadow);
+  font-size: 25px;
+  display: none;
+}
+.loader::after{
+  content: "\2026";
+  display: inline-block; 
+  overflow: hidden;
+  animation: dots steps(4, end) 1s infinite;
+  width: 0px;
+}
+@keyframes dots {
+  to {
+    width: 3em;
+
+  }
+}
+
 /*----------------------------- header--------------------------------- */
 
 .logo{
