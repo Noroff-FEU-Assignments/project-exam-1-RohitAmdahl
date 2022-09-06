@@ -175,37 +175,25 @@ text-align: right;
   display: grid;
   gap: 15px;
   grid-template-columns: 1fr 1fr 1fr ;
-  /* grid-template-rows:1fr 1fr 1fr; */
   max-width: 800px;
   margin: 0 auto;
    grid-template-areas:
-  " main cabin hotel"
-  " pool ifc" 
+  "  logo bygg"
+  "pool ifc" 
 }
 
-/* .cards-5 {
-  grid-column-start: 1;
-  grid-column-end: span 3;
-} */
-/* .cards-1{
-  grid-area: main ;
+.cards-1-logo{
+  grid-area: logo ;
 }
-
-.cards-3{
+.cards-2-bygg{
+grid-area: bygg;
+}
+.cards-3-hotel{
 grid-area: hotel;
 }
-.cards-4{
-grid-area: cabin;
-}
-.cards-5{
+.cards-4-ifc{
 grid-area: ifc;
 }
-.cards-6{
+.cards-5-pool{
 grid-area: pool;
-}
-
-.cards-2 {
-  grid-column-start: 1;
-  grid-row-start: 2;
-    grid-row-end: span 2;
-} */
+} 
