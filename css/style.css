@@ -183,12 +183,6 @@ text-align: right;
   "section pool ifc" */
 }
 
-
-.cards-6 {
-  grid-column: span 1;
-  /* grid-area: section; */
-}
-
 /* .cards-1{
   grid-area: main ;
 }
