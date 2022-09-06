@@ -108,7 +108,7 @@ header{
   display: flex;
   justify-content: space-around;
   background-color: var(--heading-background-color);
-  padding: 12px 0px;
+
 }
 
 nav{
@@ -183,36 +183,71 @@ text-align: right;
   background-color: var(--text_background-color);
 }
 
-.picture_home{
+.picture{
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
   object-fit: cover;
-  margin-top: 25px;
+  height: max-content;
+  padding: 0%;
 }
 
-.gridcontainer{
+.wrap_first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+.wrap_second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.wrappercontainer {
   display: grid;
-  gap: 15px;
-  grid-template-columns: 1fr 1fr 1fr ;
-  max-width: 800px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   margin: 0 auto;
-   grid-template-areas:
-  "  logo bygg"
-  "pool ifc" 
+  max-width: 900px;
+  gap: 10px;
 }
 
-.cards-1-logo{
-  grid-area: logo ;
+.d_render{
+width: 100%;
+font-size: 30px;
+text-align: right;
+z-index: 100;
 }
-.cards-2-bygg{
-grid-area: bygg;
+
+.drawing{
+ width: 100%;
+ font-size: 30px;
+text-align: left;
 }
-.cards-3-hotel{
-grid-area: hotel;
+
+.art{
+  width: 100%; 
+  font-size: 30px;
+  text-align: right;
 }
-.cards-4-ifc{
-grid-area: ifc;
+
+.white_model{
+  width: 100%;
+  font-size: 30px;
+  text-align: left;
 }
-.cards-5-pool{
-grid-area: pool;
-} 
+
+.text-design{
+ 
+}
+.content  {
+  text-align:right;
+  font-size: 25px;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 10px;
+  background-color: var(--text_background-color);
+
+}
