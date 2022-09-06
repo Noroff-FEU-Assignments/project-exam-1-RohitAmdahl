@@ -108,6 +108,106 @@ h1 {
   margin: 0 auto;
   max-width: 1200px;
   text-align: center;
-  padding: 150px;
   font-size: var(--main-heading);
+  color: var(--paragraph-heading-font-color);
+  margin-top: 30px;
 }
+
+.quote{
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.leonardo-vinci{
+  display: none;
+  width: 100%;
+  max-width: 80px;
+  position: absolute;
+  
+}
+
+.blockquote_text{
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.blockquote_credit:hover img {
+  transition: ease-in 0.4s;
+  display: block;
+}
+
+.blockquote_text::before {
+ content: "\201c"; 
+ font-size: 60px;
+ color: var(--cta-small-button-border);
+}
+
+.blockquote_credit{
+  font-weight: bold;
+  text-align: right;
+  font-size: 1.9em;
+  width: 80%;
+  cursor: pointer;
+}
+
+.blockquote_credit-me{
+text-align: right;
+}
+ .blockquote_credit::before {
+  content: "\2014\0020";
+} 
+
+.Architectural_Blog{
+  background-color: var(--text_background-color);
+}
+
+.picture_home{
+  width: 100%;
+  max-width: 350px;
+  object-fit: cover;
+  margin-top: 25px;
+}
+
+.gridcontainer{
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  /* grid-template-rows:1fr 1fr 1fr; */
+  max-width: 800px;
+  margin: 0 auto;
+  /* grid-template-areas:
+  " hotel cabin main"
+  "section pool ifc" */
+}
+
+
+.cards-6 {
+  grid-column: span 1;
+  /* grid-area: section; */
+}
+
+/* .cards-1{
+  grid-area: main ;
+}
+
+.cards-3{
+grid-area: hotel;
+}
+.cards-4{
+grid-area: cabin;
+}
+.cards-5{
+grid-area: ifc;
+}
+.cards-6{
+grid-area: pool;
+}
+
+.cards-2 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+    grid-row-end: span 2;
+} */
