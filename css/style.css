@@ -123,13 +123,13 @@ nav{
 .grids{
   background-image: url(/images/grids.png);
 }
-h1 {
+h1, h2 {
   margin: 0 auto;
   max-width: 1200px;
   text-align: center;
   font-size: var(--main-heading);
   color: var(--paragraph-heading-font-color);
-  margin-top: 30px;
+
 }
 
 .quote{
@@ -149,7 +149,7 @@ h1 {
 .blockquote_text{
   max-width: 1200px;
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -188,10 +188,25 @@ content: "\2014\0020";
 
 .picture{
   width: 100%;
-  max-width: 500px;
+  max-width: 380px;
   object-fit: cover;
   height: max-content;
   padding: 0%;
+}
+
+.slideshow_img{
+  width: 100%;
+  max-width: 380px;
+  margin: 20px;
+  box-shadow: -25px -40px 0px var(--picture-shadow);
+}
+
+.without-shadow  {
+  width: 100%;
+  max-width: 380px;
+  margin: 20px;
+  box-shadow: -25px -40px 0px var(--heading-background-color);
+  
 }
 
 .wrap_first {
@@ -200,12 +215,13 @@ content: "\2014\0020";
   justify-content: end;
   padding-bottom: 10px;
   padding-top: 50px;
-
-
+  font-weight: bold;
 }
+
 .wrap_second {
   display: flex;
   flex-wrap: wrap;
+  font-weight: bold;
 }
 
 .wrappercontainer {
@@ -221,25 +237,25 @@ margin-top: 50px;
 
 .drawing{
   margin-top: 50px;
- font-size: 30px;
+ font-size: 25px;
  text-align: left;
 }
 
 .art{
   margin-top: 50px;
-  font-size: 30px;
+  font-size: 25px;
   text-align: right;
 }
 
 .white_model{
   margin-top: 50px;
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
 }
 
 .text-design{
   background-color: var(--text_background-color);
-  padding: 30px;
+  padding: 25px;
   margin-top: 40px;
   width: 1200px;
 
@@ -247,7 +263,7 @@ margin-top: 50px;
 
 .content  {
   text-align:left;
-  font-size: 2em;
+  font-size: 1.6em;
   margin: 0 auto;
   max-width: 900px;
   padding: 10px;
@@ -256,9 +272,31 @@ margin-top: 50px;
 
 }
 
+.read_more{
+  font-size: 20px;
+  font-weight:normal;
+  background-color: var(--text_background-color);
+  max-width: 400px;
+  padding: 15px;
+  color: var(--paragraph-heading-font-color);
+  margin: 10px;
+
+}
+
 .text-rightside{
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
-  
+  justify-content: end;  
+}
+
+.latest-blog{
+  padding: 30px 0px;
+}
+
+.slideshow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px;
 }
