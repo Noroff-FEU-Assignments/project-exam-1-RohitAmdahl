@@ -25,7 +25,7 @@ font-family: 'Poppins',Arial, Helvetica, sans-serif;
   --cta-small-shadow: #444444;
   --cta-small-button-border: #06019D;
   --box-shadow-button: -6px -4px 0px; 
-  --main-heading :3.5em;
+  --main-heading :4em;
   
 }
 
@@ -175,12 +175,15 @@ h1 {
 .blockquote_credit-me{
 text-align: right;
 }
- .blockquote_credit::before {
-  content: "\2014\0020";
+
+.blockquote_credit::before {
+content: "\2014\0020";
 } 
 
-.Architectural_Blog{
+.architectural_blog{
   background-color: var(--text_background-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .picture{
@@ -194,60 +197,68 @@ text-align: right;
 .wrap_first {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: end;
+  padding-bottom: 10px;
+  padding-top: 50px;
 
 
 }
 .wrap_second {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
 }
 
 .wrappercontainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
   margin: 0 auto;
   max-width: 900px;
-  gap: 10px;
 }
 
 .d_render{
-width: 100%;
 font-size: 30px;
 text-align: right;
-z-index: 100;
+margin-top: 50px;
 }
 
 .drawing{
- width: 100%;
+  margin-top: 50px;
  font-size: 30px;
-text-align: left;
+ text-align: left;
 }
 
 .art{
-  width: 100%; 
+  margin-top: 50px;
   font-size: 30px;
   text-align: right;
 }
 
 .white_model{
-  width: 100%;
+  margin-top: 50px;
   font-size: 30px;
   text-align: left;
 }
 
 .text-design{
- 
+  background-color: var(--text_background-color);
+  padding: 30px;
+  margin-top: 40px;
+  width: 1200px;
+
 }
+
 .content  {
-  text-align:right;
-  font-size: 25px;
+  text-align:left;
+  font-size: 2em;
   margin: 0 auto;
   max-width: 900px;
   padding: 10px;
-  background-color: var(--text_background-color);
+  font-weight: bold;
+  color: var(--paragraph-heading-font-color);
 
+}
+
+.text-rightside{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  
 }
