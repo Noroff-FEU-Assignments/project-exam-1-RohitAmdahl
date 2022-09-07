@@ -379,6 +379,7 @@ h2 {
   flex-wrap: wrap;
   border: 1px solid black;
   box-shadow: -31px 39px 2px var(--footer-box-shadow-color);
+  width: 800px;
 }
 
 .footer-box {
@@ -394,6 +395,11 @@ h2 {
   padding-left: 15px;
 }
 
+.number {
+  width: 440px;
+  box-sizing: border-box;
+}
+
 .tea {
   padding-bottom: 10px;
   padding-right: 10px;
@@ -402,6 +408,14 @@ h2 {
   font-weight: bold;
   box-sizing: border-box;
   width: 295px;
+}
+
+.media {
+  padding: 10px;
+}
+.social-media {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .copy-write {
