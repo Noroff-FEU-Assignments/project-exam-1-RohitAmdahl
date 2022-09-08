@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content=" design and architectural blog this website has design related topic like 3d render related with architecture and logo design retail design layouts and  architectural drawings also web and app design digital art design."
-    <title>AD design Blog | home</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>AD design Blog | Blog</title>
+    <meta
+      name="description"
+      content=" design and architectural blog this website has design related topic like 3d render related with architecture and logo design retail design layouts and  architectural drawings also web and app design digital art design."
+      <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/favicon.ico"
+    />
     <script
       src="https://kit.fontawesome.com/3fd806e42a.js"
       crossorigin="anonymous"
@@ -74,9 +80,22 @@
         <div class="line3"></div>
       </div>
     </header>
-    <main>
-      <h1>Project exam -1 Noroff</h1>
-      <div>here will be blog</div>
+    <main class="grids">
+      <div class="loader"></div>
+      <article class="aricle-post">
+        <div class="postcontainer">
+          <div>
+            <h1 class="heading"></h1>
+          </div>
+          <div>
+            <img class="post-image" src="" alt="" />
+          </div>
+          <div>
+            <p class="project-year"></p>
+            <p class="description"></p>
+          </div>
+        </div>
+      </article>
     </main>
     <footer>
       <section class="wrapper-box">
@@ -95,7 +114,11 @@
             <p class="address">Brenna, Mortensrud 1279,Oslo Norway</p>
             <p class="number">
               +47 40538464
-              <img src="images/arrow-thin.png" alt="thin arrow" />
+              <img
+                src="images/arrow-thin.png"
+                alt="thin arrow"
+                class="thin-arrow"
+              />
               <span>{simple way just call}</span>
             </p>
 
@@ -133,6 +156,7 @@
         </div>
       </section>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/humberger.js" type="module"></script>
+    <script src="js/post.js" type="module"></script>
   </body>
 </html>

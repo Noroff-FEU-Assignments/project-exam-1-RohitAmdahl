@@ -27,6 +27,8 @@ body {
   --pic-shadow: -30px -60px 0px;
   --main-heading: 4em;
   --footer-box-shadow-color: #d9e9f7;
+  --but-read-more-text: #010f9f;
+  --but-read-more-box-shadow: -13px 10px 0px;
 }
 
 .loader {
@@ -186,6 +188,9 @@ h2 {
   object-fit: cover;
   height: max-content;
   padding: 0%;
+  box-shadow: -18px -17px;
+  color: var(--picture-shadow);
+  border-bottom: 8px solid black;
 }
 
 .slideshow_img {
@@ -215,6 +220,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   font-weight: bold;
+  margin-top: 40px;
 }
 
 .wrappercontainer {
@@ -222,30 +228,20 @@ h2 {
   max-width: 900px;
 }
 
+.drawing {
+  margin-top: 50px;
+  font-size: 2em;
+  text-align: left;
+  padding: 10px;
+}
+
+.art,
 .d_render {
-  font-size: 30px;
+  margin-top: 50px;
+  font-size: 2em;
   text-align: right;
-  margin-top: 50px;
+  padding: 10px;
 }
-
-.drawing,
-.white_model {
-  margin-top: 50px;
-  font-size: 25px;
-  text-align: left;
-}
-
-.art {
-  margin-top: 50px;
-  font-size: 25px;
-  text-align: right;
-}
-
-/* .white_model {
-  margin-top: 50px;
-  font-size: 25px;
-  text-align: left;
-} */
 
 .text-design {
   background-color: var(--text_background-color);
@@ -301,17 +297,19 @@ h2 {
 
 .cta-button {
   background-color: var(--button-background);
-  padding: 10px;
   border: 3px solid var(--cta-small-button-border);
   cursor: pointer;
   font-size: 18px;
   color: var(--paragraph-heading-font-color);
+  box-shadow: var(--but-read-more-box-shadow);
+  padding: 15px;
+  font-weight: bold;
 }
 
 .cta-button:hover {
-  box-shadow: var(--box-shadow-button);
-  padding: 15px;
   transition: ease-in 0.4s;
+  color: var(--but-read-more-text);
+  background-color: var(--footer-contact-color);
 }
 
 .right-icon,
@@ -341,12 +339,19 @@ h2 {
   padding: 25px;
   color: var(--paragraph-heading-font-color);
   box-shadow: -30px 27px 0px var(--footer-contact-color-shadow);
+  position: relative;
+  left: 38px;
 }
 
 .arrow-footer,
 .footer-logo {
   width: 100%;
   max-width: 194px;
+}
+
+.thin-arrow {
+  width: 100%;
+  max-width: 60px;
 }
 
 .arrow-footer {
@@ -380,6 +385,7 @@ h2 {
   border: 1px solid black;
   box-shadow: -31px 39px 2px var(--footer-box-shadow-color);
   width: 800px;
+  position: inherit;
 }
 
 .footer-box {
