@@ -8,24 +8,21 @@ async function blogPost(url) {
   const results = await response.json()
   console.log(results)
 
-  // postContainer.innerHTML = " ";
-
   results.forEach(function (post) {
-    results.innerHTML = `
-                          <article class="post-heading">
-                            <div class="post-container">
-                              <div>
-                                <h1 class="heading">${post.title[0].rendered}</h1>
-                              </div>
-                              <div>
-                                <img class="post-image" src="" alt="" />
-                              </div>
-                              <div>
-                                <p class="project-year"></p>
-                                <p class="description"></p>
-                              </div>
-                             </div>                          
-                         </article> `
+    results.innerHTML = `<article class="post-heading">
+                        <div class="post-container">
+                          <div>
+                            <h1 class="heading">${post.id}</h1>
+                          </div>
+                          <div>
+                            <img class="post-image" src="" alt="" />
+                          </div>
+                          <div>
+                            <p class="project-year"></p>
+                            <p class="description"></p>
+                          </div>
+                        </div>                          
+                    </article> `
   })
 }
 
