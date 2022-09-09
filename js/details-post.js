@@ -14,6 +14,7 @@ async function fetchPost() {
     const response = await fetch(linkUrl)
     const link = await response.json()
     console.log(link)
+
     postDetails.innerHTML = ''
     postDetails.innerHTML += ` <article id="blog-artical">
                                     <h1 class="heading-post">${post.title.rendered}</h1>
