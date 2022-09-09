@@ -5,8 +5,7 @@ const params = new URLSearchParams(queryString)
 console.log(params)
 const id = params.get('id')
 console.log(id)
-const linkUrl =
-  'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts/?per_page=20/' + id
+const linkUrl = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts/' + id
 
 console.log(linkUrl)
 
@@ -31,3 +30,4 @@ async function fetchPost() {
     console.log('error')
   }
 }
+fetchPost()
