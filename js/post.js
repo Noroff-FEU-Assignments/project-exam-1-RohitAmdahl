@@ -9,21 +9,24 @@ async function blogPost(url) {
   const response = await fetch(url)
   const results = await response.json()
   console.log(results)
-
   results.forEach(function (post) {
-    postContainer.innerHTML = `<article class="post-heading">
-                        <div class="post-container">
-                          <div>
-                            <h1 class="heading">${post.title.rendered}</h1>
-                          </div>
-                          <div>
-                            <img class="post-image" src="" alt="" />
-                          </div>
-                          <div>
-                            <p class="description">${post.content.rendered}</p>
-                          </div>
-                        </div>
-                    </article> `
+    postContainer.innerHTML += `<article id="blog-artical">
+                                    <h1 class="heading-post">${post.title.rendered}</h1>
+                                    <div class="picture-post">
+                                      <img src="${post.jetpack_featured_media_url}" alt="" class="post-picture" />
+                                    </div>
+                                    <div class="blog-container">
+                                      <div class="post-summary">
+                                        <p class="text">
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </article>
+                                  <div class="cta-big">
+                                    <button class="cta-button">
+                                      Read more about this project
+                                    </button>
+                                  </div>`
   })
 }
 
