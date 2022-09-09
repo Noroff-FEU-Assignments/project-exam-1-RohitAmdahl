@@ -1,6 +1,6 @@
-const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts/?per_page=20'
+const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed'
 console.log(url)
-const postContainer = document.getElementById('post-blogs')
+const postContainer = document.querySelector('.post-blogs')
 const loading = document.querySelector('.loader')
 // console.log(postContainer)
 // console.log(loading)
@@ -12,7 +12,7 @@ async function blogPost(url) {
     //console.log(results)
     loading.innerHTML = ''
     results.forEach(function (post) {
-      postContainer.innerHTML += `<a href="blog_specific.html?id=<article id="blog-artical">
+      postContainer.innerHTML += `<a href="blog_specific.html?id=<article class="blog-artical">
                                     <h1 class="heading-post">${post.title.rendered}</h1>
                                     <div class="picture-post">
                                       <img src="${post.jetpack_featured_media_url}" alt="" class="post-picture" />
