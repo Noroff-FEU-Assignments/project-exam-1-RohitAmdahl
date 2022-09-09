@@ -480,3 +480,16 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+/* ------------------------------detail-specific page--------------------------- */
+.detail-img {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+}
+
+.picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

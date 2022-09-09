@@ -10,9 +10,9 @@ async function blogPost(url) {
     const response = await fetch(url)
     const results = await response.json()
     //console.log(results)
-    loading.innerHTML = ' '
+    loading.innerHTML = ''
     results.forEach(function (post) {
-      postContainer.innerHTML += `<article id="blog-artical">
+      postContainer.innerHTML += `<a href="blog_specific.html?id=<article id="blog-artical">
                                     <h1 class="heading-post">${post.title.rendered}</h1>
                                     <div class="picture-post">
                                       <img src="${post.jetpack_featured_media_url}" alt="" class="post-picture" />
@@ -28,10 +28,14 @@ async function blogPost(url) {
                                     <button class="cta-button">
                                       Read more about this post
                                     </button>
-                                  </div>`
+                                  </div> </a>`
     })
   } catch (err) {
-    console.log(error)
+    console.log('error')
+    textContainer.innerHTML = displayError('we have found an error')
+    function displayError(massage) {
+      return `<div> ${massage}</div>`
+    }
   }
 }
 
