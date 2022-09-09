@@ -493,3 +493,21 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
 }
+
+.wp-block-image.size-large {
+  width: 100%;
+  max-width: 800px;
+  border: 10px solid var(--button-background);
+  margin: 0 auto;
+}
+
+.wp-block-image.size-full {
+  width: 100%;
+  max-width: 800px;
+  border: 10px solid var(--button-background);
+  margin: 0 auto;
+}
+/* .wp-image-598 {
+  margin: 0 auto;
+  padding: 40px;
+} */

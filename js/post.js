@@ -12,7 +12,7 @@ async function blogPost(url) {
     //console.log(results)
     loading.innerHTML = ''
     results.forEach(function (post) {
-      postContainer.innerHTML += `<a href="blog_specific.html?id=<article class="blog-artical">
+      postContainer.innerHTML += `<a href="blog_specific.html?id=${post.id}"><article                  class="blog-artical">
                                     <h1 class="heading-post">${post.title.rendered}</h1>
                                     <div class="picture-post">
                                       <img src="${post.jetpack_featured_media_url}" alt="" class="post-picture" />
