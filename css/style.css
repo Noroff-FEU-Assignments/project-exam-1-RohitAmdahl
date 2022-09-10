@@ -495,17 +495,26 @@ h2 {
 }
 
 .blog-container figure img {
-  border: 10px solid var(--button-background);
+  border: 6px solid var(--heading-background-color);
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .text-pic {
   margin: 0 auto;
   font-size: 25px;
   padding: 50px;
-  background: var(--footer-box-shadow-color);
+  width: 100%;
+  margin-top: 25px;
+  background: var(--text_background-color);
   color: var(--paragraph-heading-font-color);
 }
+
+.text-pic p {
+  margin-top: 25px;
+}
+
 .blog-container figcaption {
   margin: 0 auto;
   font-size: 35px;
