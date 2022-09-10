@@ -7,6 +7,7 @@ const linkUrl =
   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts/' + id + '?_embed'
 console.log(linkUrl)
 const postDetails = document.querySelector('.post-Container')
+const loading = document.querySelector('.loader')
 console.log(postDetails)
 
 async function fetchPost() {
@@ -31,6 +32,10 @@ async function fetchPost() {
                                   </article>`
   } catch (error) {
     console.log('error')
+    postDetails.innerHTML = displayError('we have found an error')
+    function displayError(massage) {
+      return `<div> ${massage}</div>`
+    }
   }
 }
 fetchPost()

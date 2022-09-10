@@ -119,6 +119,7 @@ nav {
 .grids {
   background-image: url(/images/grids.png);
 }
+
 h1,
 h2 {
   margin: 0 auto;
@@ -138,8 +139,27 @@ h2 {
 .leonardo-vinci {
   display: none;
   width: 100%;
-  max-width: 80px;
+  max-width: 100px;
   position: absolute;
+}
+
+.arrow-category {
+  width: 100%;
+  max-width: 150px;
+  height: fit-content;
+  margin-top: 50px;
+  z-index: 500;
+}
+
+.flip {
+  width: 100%;
+  max-width: 150px;
+  height: fit-content;
+  margin-top: 50px;
+  transform: scaleX(-1);
+  filter: flip;
+  -ms-filter: 'flip';
+  float: none;
 }
 
 .blockquote_text {
@@ -193,6 +213,13 @@ h2 {
   border-bottom: 8px solid black;
 }
 
+.picture:hover {
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
+    0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
+    0 32px 16px rgba(0, 0, 0, 0.09);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
 .slideshow_img {
   width: 100%;
   max-width: 380px;
@@ -233,6 +260,8 @@ h2 {
   font-size: 2em;
   text-align: left;
   padding: 10px;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
 }
 
 .art,
@@ -241,6 +270,8 @@ h2 {
   font-size: 2em;
   text-align: right;
   padding: 10px;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
 }
 
 .text-design {
@@ -497,8 +528,10 @@ h2 {
 .blog-container figure img {
   border: 6px solid var(--heading-background-color);
   margin: 0 auto;
-  max-width: 100%;
   height: auto;
+  max-width: 60%;
+  height: auto;
+  display: block;
 }
 
 .text-pic {

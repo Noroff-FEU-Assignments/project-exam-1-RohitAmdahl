@@ -1,6 +1,7 @@
 const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?categories=13'
 console.log(url)
 const postRender = document.querySelector('.post-Container')
+const loading = document.querySelector('.loader')
 console.log(postRender)
 
 async function getRenderCategory(url) {
@@ -31,6 +32,10 @@ async function getRenderCategory(url) {
     })
   } catch (error) {
     console.log(error)
+    postRender.innerHTML = displayError('we have found an error')
+    function displayError(massage) {
+      return `<div> ${massage}</div>`
+    }
   }
 }
 getRenderCategory(url)
