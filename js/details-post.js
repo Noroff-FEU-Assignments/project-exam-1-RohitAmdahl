@@ -18,12 +18,13 @@ async function fetchPost() {
 
     postDetails.innerHTML += ` <article>
                                     <h1 class="heading-post">${link.title.rendered}</h1>
+
                                     <div class="picture-post">
                                       <img src="${link.jetpack_featured_media_url}" alt="" class="post-picture" />
                                     </div>
                                     <div class="blog-container">
-                                      <div>
-                                       ${link.content.rendered}</p>
+                                      <div class="text-pic">
+                                       ${link.content.rendered}
                                       </div>
                                     </div>
                                   </article>`

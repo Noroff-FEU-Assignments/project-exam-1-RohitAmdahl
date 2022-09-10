@@ -2,14 +2,14 @@ const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed'
 console.log(url)
 const postContainer = document.querySelector('.post-blogs')
 const loading = document.querySelector('.loader')
-// console.log(postContainer)
-// console.log(loading)
+console.log(postContainer)
+console.log(loading)
 
 async function blogPost(url) {
   try {
     const response = await fetch(url)
     const results = await response.json()
-    //console.log(results)
+    console.log(results)
     loading.innerHTML = ''
     results.forEach(function (post) {
       postContainer.innerHTML += `<a href="blog_specific.html?id=${post.id}"><article                  class="blog-artical">
@@ -25,9 +25,9 @@ async function blogPost(url) {
                                     </div>
                                   </article>
                                   <div class="cta-big">
-                                    <button class="cta-button">
+                                    <h1 class="cta-button">
                                       Read more about this post
-                                    </button>
+                                    </h1>
                                   </div> </a>`
     })
   } catch (err) {
