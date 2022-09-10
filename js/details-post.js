@@ -24,6 +24,7 @@ async function fetchPost() {
                                     </div>
                                     <div class="blog-container">
                                       <div class="text-pic">
+
                                        ${link.content.rendered}
                                       </div>
                                     </div>

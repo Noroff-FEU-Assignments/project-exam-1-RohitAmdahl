@@ -494,11 +494,28 @@ h2 {
   flex-wrap: wrap;
 }
 
-.wp-block-image.size-large {
-  width: 100%;
-  max-width: 800px;
+.blog-container figure img {
   border: 10px solid var(--button-background);
   margin: 0 auto;
+}
+
+.blog-container figure {
+}
+
+.text-pic {
+  margin: 0 auto;
+  font-size: 25px;
+  padding: 50px;
+  background: var(--footer-box-shadow-color);
+  color: var(--paragraph-heading-font-color);
+}
+.blog-container figcaption {
+  margin: 0 auto;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 25px;
+  background: var(--footer-box-shadow-color);
+  color: var(--paragraph-heading-font-color);
 }
 
 .wp-block-image.size-full {

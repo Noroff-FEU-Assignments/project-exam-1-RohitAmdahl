@@ -15,19 +15,20 @@ async function blogPost(url) {
       postContainer.innerHTML += `<a href="blog_specific.html?id=${post.id}"><article                  class="blog-artical">
                                     <h1 class="heading-post">${post.title.rendered}</h1>
                                     <div class="picture-post">
-                                      <img src="${post.jetpack_featured_media_url}" alt="" class="post-picture" />
+                                      <img src="${post.jetpack_featured_media_url}" alt="${post._embedded['wp:featuredmedia']['0'].alt_text}" class="post-picture" />
                                     </div>
                                     <div class="blog-container">
-                                      <div class="post-summary">
+                                      <a href="blog_specific.html?id=${post.id}"><div class="post-summary">
                                         <p class="text">${post.excerpt.rendered}
                                         </p>
-                                      </div>
+                                      </div></a>
                                     </div>
-                                  </article>
+                                  </article></a>
+                                  <a href="blog_specific.html?id=${post.id}">
                                   <div class="cta-big">
-                                    <h1 class="cta-button">
-                                      Read more about this post
-                                    </h1>
+                                    <button class="cta-button">
+                                       Read more about this post
+                                    </button>
                                   </div> </a>`
     })
   } catch (err) {
