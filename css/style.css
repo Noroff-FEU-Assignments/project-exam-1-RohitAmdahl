@@ -499,9 +499,6 @@ h2 {
   margin: 0 auto;
 }
 
-.blog-container figure {
-}
-
 .text-pic {
   margin: 0 auto;
   font-size: 25px;
@@ -524,7 +521,3 @@ h2 {
   border: 10px solid var(--button-background);
   margin: 0 auto;
 }
-/* .wp-image-598 {
-  margin: 0 auto;
-  padding: 40px;
-} */
