@@ -10,7 +10,7 @@ async function getRenderCategory(url) {
     const getDrafting = await response.json()
     console.log(getDrafting)
     drafting.innerHTML = ' '
-    renders.forEach(function (getResults) {
+    getDrafting.forEach(function (getResults) {
       drafting.innerHTML += `<a href="/drawing.html?id=${getResults.id}"><article                  class="blog-artical">
                                     <h1 class="heading-post">${getResults.title.rendered}</h1>
                                     <div class="picture-post">
@@ -34,7 +34,7 @@ async function getRenderCategory(url) {
     console.log(error)
     drafting.innerHTML = displayError('we have found an error')
     function displayError(massage) {
-      return `<div> ${massage}</div>`
+      return `<div class="error"> ${massage}</div>`
     }
   }
 }

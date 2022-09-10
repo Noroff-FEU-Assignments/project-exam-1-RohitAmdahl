@@ -563,3 +563,9 @@ h2 {
   border: 10px solid var(--button-background);
   margin: 0 auto;
 }
+
+.error {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
