@@ -73,14 +73,15 @@ a {
 }
 
 .active {
-  border-bottom-width: 2px;
-  border-bottom-style: solid var(--paragraph-heading-font-color);
+  border-bottom-width: 3px;
+  border-bottom-style: double;
+  color: var(--footer-text);
+  border-top-style: double;
 }
 
 .active:hover {
-  /* transition: ease-in 0.3ms; */
+  transition: ease-in 0.3ms;
   color: var(--paragraph-heading-font-color);
-  border-bottom-width: 2px;
 }
 
 #burger-nav {
