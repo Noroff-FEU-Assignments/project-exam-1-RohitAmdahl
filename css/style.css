@@ -60,6 +60,13 @@ body {
 a {
   text-decoration: none;
   color: var(--paragraph-heading-font-color);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.links {
+  text-decoration: none;
+  color: var(--paragraph-heading-font-color);
   margin: 0px 10px;
   font-size: 1.2em;
   font-weight: bold;
@@ -621,4 +628,9 @@ h2 {
 
 .about {
   background-color: var(--text_background-color);
+}
+
+.error-msg {
+  color: var(--picture-shadow);
+  font-weight: bold;
 }
