@@ -34,7 +34,7 @@ async function getRenderCategory(url) {
     console.log(error)
     postRender.innerHTML = displayError('we have found an error')
     function displayError(massage) {
-      return `<div> ${massage}</div>`
+      return `<div class ="found-error"> ${massage}</div>`
     }
   }
 }

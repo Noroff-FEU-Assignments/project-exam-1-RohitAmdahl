@@ -34,20 +34,21 @@ body {
 }
 
 .loader {
-  color: var(--footer-contact-color-shadow);
-  font-size: 25px;
-  display: none;
+  border: 16px solid var(--but-read-more-text);
+  border-top: 16px solid var(--footer-contact-color-shadow);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spinning 2s linear infinite;
+  display: flex;
 }
-.loader::after {
-  content: '\2026';
-  display: inline-block;
-  overflow: hidden;
-  animation: dots steps(4, end) 1s infinite;
-  width: 0px;
-}
-@keyframes dots {
-  to {
-    width: 3em;
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

@@ -10,8 +10,7 @@ async function blogPost(url) {
     const response = await fetch(url)
     const results = await response.json()
     console.log(results)
-    loading.innerHTML = ''
-
+    postContainer.innerHTML = ''
     results.forEach(function (post) {
       postContainer.innerHTML += `<a href="blog_specific.html?id=${post.id}"><article                  class="blog-artical">
                                     <h1 class="heading-post">${post.title.rendered}</h1>
@@ -36,7 +35,7 @@ async function blogPost(url) {
     console.log('error')
     textContainer.innerHTML = displayError('we have found an error')
     function displayError(massage) {
-      return `<div> ${massage}</div>`
+      return `<div class ="found-error"> ${massage}</div>`
     }
   }
 }

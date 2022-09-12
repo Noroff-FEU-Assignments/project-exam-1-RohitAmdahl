@@ -6,11 +6,12 @@ console.log(loading)
 console.log(aboutPage)
 
 async function fetchPage() {
-  const response = await fetch(aboutMe)
-  const results = await response.json()
-  console.log(results)
-
-  aboutPage.innerHTML += `<div class="blog-artical  grids">
+  try {
+    const response = await fetch(aboutMe)
+    const results = await response.json()
+    console.log(results)
+    aboutPage.innerHTML = ''
+    aboutPage.innerHTML += `<div class="blog-artical  grids">
                             <div class="about">
                             <h1 class="heading-post">${results.title.rendered}</h1>
                             </div>
@@ -18,5 +19,12 @@ async function fetchPage() {
                               ${results.content.rendered}
                             </div>
                           </div>`
+  } catch (error) {
+    console.log('error')
+    textContainer.innerHTML = displayError('we have found an error')
+    function displayError(massage) {
+      return `<div class="found-error"> ${massage}</div>`
+    }
+  }
 }
 fetchPage()

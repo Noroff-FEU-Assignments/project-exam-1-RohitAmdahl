@@ -16,7 +16,6 @@ async function fetchPost() {
     const link = await response.json()
     console.log(link)
     postDetails.innerHTML = ''
-
     postDetails.innerHTML += ` <article>
                                     <h1 class="heading-post">${link.title.rendered}</h1>
 
@@ -32,9 +31,9 @@ async function fetchPost() {
                                   </article>`
   } catch (error) {
     console.log('error')
-    postDetails.innerHTML = displayError('we have found an error')
+    textContainer.innerHTML = displayError('we have found an error')
     function displayError(massage) {
-      return `<div> ${massage}</div>`
+      return `<div class ="found-error"> ${massage}</div>`
     }
   }
 }
