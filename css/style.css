@@ -29,6 +29,8 @@ body {
   --footer-box-shadow-color: #d9e9f7;
   --but-read-more-text: #010f9f;
   --but-read-more-box-shadow: -13px 10px 0px;
+  --submit-form-button: #0cfaac;
+  --error: #ff0909;
 }
 
 .loader {
@@ -55,6 +57,7 @@ body {
   width: 100%;
   max-width: 150px;
   margin-top: 10px;
+  aspect-ratio: 3/1;
 }
 
 a {
@@ -497,6 +500,7 @@ h2 {
   max-width: 800px;
   box-shadow: -73px -31px var(--footer-box-shadow-color);
   border: 10px solid var(--button-background);
+  aspect-ratio: auto;
 }
 
 .heading-post {
@@ -591,7 +595,7 @@ h2 {
   display: none;
 }
 
-/* ---------------------------------------About me----------------------------------- */
+/* ---------------------------------------About page me----------------------------------- */
 
 .has-medium-font-size {
   margin: 0 auto;
@@ -631,7 +635,76 @@ h2 {
   background-color: var(--text_background-color);
 }
 
+/* ..----------------------contact form ------------------------ */
+
 .error-msg {
-  color: var(--picture-shadow);
+  color: var(--error);
   font-weight: bold;
+  display: none;
+}
+
+.nameError,
+.emailError,
+.subjectError,
+.messageError {
+  color: var(--error);
+  font-weight: bold;
+  display: none;
+}
+
+.contact-form_form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px fit-content;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--paragraph-heading-font-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 0px;
+}
+
+.form-container {
+  background: var(--text_background-color);
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 25px;
+}
+
+#firstName,
+#email,
+#subject {
+  padding: 10px;
+}
+
+#cta-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 250px;
+  margin: 0 auto;
+  background-color: var(--button-background);
+}
+.cta-submit_form {
+  background-color: var(--button-background);
+  border: 3px solid var(--cta-small-button-border);
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--paragraph-heading-font-color);
+  box-shadow: var(--but-read-more-box-shadow);
+  padding: 15px;
+  font-weight: bold;
+  max-width: 250px;
+  margin: 0 auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+.cta-submit_form:hover {
+  transition: ease-in 0.4s;
+  background-color: var(--submit-form-button);
+  color: var(--paragraph-heading-font-color);
 }

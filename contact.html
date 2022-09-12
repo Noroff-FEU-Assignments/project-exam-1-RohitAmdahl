@@ -81,55 +81,54 @@
       </div>
     </header>
     <main class="grids">
-      <div class="form-wapper">
         <div class="form-heading">
           <h1 class="heading-post">Send me a message</h1>
         </div>
-        <div class="form-container">
-          <form action="/index.html" method="post">
-            <div class="contact-form">
+        <div class="form-container ">
+          <form action="/index.html" method="post" class="formContact">
               <div class="contact-form_form">
-                <label for="firstname">First Name</label>
+                <label for="firstname">First Name (more then 5 characters)</label>
                 <input
                   type="text"
-                  id="firstname"
+                  id="firstName"
                   name="name"
                   placeholder="Your name.."
                 />
-                <div class="error-msg">
+                <div class="error-msg nameError" >
                   Name Should be more than 5 characters long.
                 </div>
               </div>
               <div class="contact-form_form">
-                <label for="lastname">Email</label>
+                <label for="lastname">Email (required)</label>
                 <input type="email" id="email" placeholder="Your email.." />
-                <div class="error-msg">
+                <div class="error-msg emailError">
                   Email address must be a valid email address.
                 </div>
               </div>
               <div class="contact-form_form">
-                <label for="subject">subject</label>
+                <label for="subject">Subject (more than 15 characters)</label>
                 <input
                   type="subject"
                   id="subject"
-                  placeholder="Write your subject.."
+                  placeholder="Your subject.."
                 />
-                <div class="error-msg">
+                <div class="error-msg subjectError">
                   Subject Should be more than 15 characters long.
                 </div>
               </div>
-            </div>
             <div class="contact-form_form">
                 <label for=" message">Message</label>
                 <textarea name="message" class="message" id="message" cols="33" rows="5" placeholder="write your Message...."></textarea>
-                <div class="error-msg">
+                <div class="error-msg messageError">
                   Message content Should be more than 25 characters long.
                 </div>
               </div>
             </div>
+            <div id="cta-submit">
+              <button class="cta-submit_form">Submit</button>
+            </div>
           </form>
         </div>
-      </div>
     <footer>
       <section class="wrapper-box">
         <div class="contact"><p>contact</p></div>
@@ -189,6 +188,7 @@
         </div>
       </section>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/humberger.js"></script>
+    <script src="js/page.js/contact.js"></script>
   </body>
 </html>
