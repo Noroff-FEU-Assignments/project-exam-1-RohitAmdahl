@@ -11,6 +11,7 @@ async function blogPost(url) {
     const results = await response.json()
     console.log(results)
     loading.innerHTML = ''
+
     results.forEach(function (post) {
       postContainer.innerHTML += `<a href="blog_specific.html?id=${post.id}"><article                  class="blog-artical">
                                     <h1 class="heading-post">${post.title.rendered}</h1>

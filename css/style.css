@@ -637,11 +637,11 @@ h2 {
 
 /* ..----------------------contact form ------------------------ */
 
-.error-msg {
-  color: var(--error);
+/* .error-msg {
+  border: var(--error);
   font-weight: bold;
   display: none;
-}
+} */
 
 .nameError,
 .emailError,
@@ -651,6 +651,13 @@ h2 {
   font-weight: bold;
   display: none;
 }
+
+/* #firstName,
+#email,
+#subject,
+#message {
+  padding: 10px;
+} */
 
 .contact-form_form {
   display: flex;
