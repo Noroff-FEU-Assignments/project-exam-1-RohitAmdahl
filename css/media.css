@@ -29,8 +29,8 @@
   nav {
     position: absolute;
     right: 0;
-    height: 70vh;
-    top: 20vh;
+    height: 82vh;
+    top: 17vh;
     background-color: var(--text_background-color);
     display: grid;
     transform: translateX(100%);
@@ -40,6 +40,7 @@
   .nav-active {
     transform: translateX(0%);
     width: 100%;
+    z-index: 1000;
   }
 
   a {
@@ -51,6 +52,7 @@
     position: absolute;
     margin-top: 15px;
     margin-left: 7px;
+    border: 2px solid var(--paragraph-heading-font-color);
   }
 
   #burger-nav div {
@@ -97,6 +99,31 @@
     padding: 15px;
   }
 
-  .wp-block-image {
+  .wrap_second,
+  .wrap_first {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: fit-content;
+  }
+  .arrow-footer,
+  .flip,
+  .arrow-category {
+    display: none;
+  }
+  .drawing {
+    margin: 10px;
+  }
+  .picture,
+  .picture-drawing {
+    padding: 20px;
+  }
+  .art,
+  .d_render {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
   }
 }

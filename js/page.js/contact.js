@@ -9,12 +9,17 @@ const email = document.getElementById('email')
 console.log(email)
 const message = document.getElementById('message')
 console.log(message)
+
 //---------all the error down here
 const firstNameError = document.querySelector('.nameError')
 const emailError = document.querySelector('.emailError')
 const subjectError = document.querySelector('.subjectError')
 const messageError = document.querySelector('.messageError')
 
+//-----------tittle--------
+const title = document.querySelector('.tittleInfo')
+title.innerHTML = 'AD design Blog | Contact'
+//---------------form validation--------------
 function validationForm() {
   event.preventDefault()
 

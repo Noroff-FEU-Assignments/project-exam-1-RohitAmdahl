@@ -1,9 +1,6 @@
 export const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts'
-// console.log(url)
-// const allPosts =
-//   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed'
-// console.log(allPosts)
 const button = document.querySelector('.load_more')
+const title = document.querySelector('.tittleInfo')
 console.log(button)
 const postContainer = document.querySelector('.post-blogs')
 const loading = document.querySelector('.loader')
@@ -12,6 +9,7 @@ export async function blogPost(url) {
     const response = await fetch(url)
     const results = await response.json()
     console.log(results)
+    title.innerHTML = 'Design Blog | Blog'
     postContainer.innerHTML = ''
     results.forEach(function (post) {
       postContainer.innerHTML += `<a href="blog_specific.html?id=${post.id}"><article                  class="blog-artical">

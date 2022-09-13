@@ -73,7 +73,6 @@ body {
   width: 100%;
   max-width: 150px;
   margin-top: 10px;
-  aspect-ratio: 3/1;
 }
 
 a {
@@ -527,7 +526,7 @@ h2 {
 
 .post-picture {
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   box-shadow: -40px -17px var(--footer-box-shadow-color);
   border: 10px solid var(--button-background);
   aspect-ratio: auto;

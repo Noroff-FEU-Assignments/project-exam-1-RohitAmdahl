@@ -2,6 +2,7 @@ const aboutMe = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/pages/118'
 console.log(aboutMe)
 const aboutPage = document.querySelector('.post-blogs')
 const loading = document.querySelector('.loader')
+const title = document.querySelector('.tittleInfo')
 console.log(loading)
 console.log(aboutPage)
 
@@ -10,6 +11,7 @@ async function fetchPage() {
     const response = await fetch(aboutMe)
     const results = await response.json()
     console.log(results)
+    title.innerHTML = 'Design blog | About me'
     aboutPage.innerHTML = ''
     aboutPage.innerHTML += `<div class="blog-artical  grids">
                             <div class="about">
