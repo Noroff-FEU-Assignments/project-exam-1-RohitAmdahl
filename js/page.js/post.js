@@ -1,11 +1,13 @@
-const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed'
+export const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts'
 console.log(url)
+// const allPosts =
+//   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?per_page=20&_embed'
+// console.log(allPosts)
+const button = document.querySelector('.load_more')
+console.log(button)
 const postContainer = document.querySelector('.post-blogs')
 const loading = document.querySelector('.loader')
-console.log(postContainer)
-console.log(loading)
-
-async function blogPost(url) {
+export async function blogPost(url) {
   try {
     const response = await fetch(url)
     const results = await response.json()
@@ -15,7 +17,7 @@ async function blogPost(url) {
       postContainer.innerHTML += `<a href="blog_specific.html?id=${post.id}"><article                  class="blog-artical">
                                     <h1 class="heading-post">${post.title.rendered}</h1>
                                     <div class="picture-post">
-                                      <img src="${post.jetpack_featured_media_url}" alt="${post._embedded['wp:featuredmedia']['0'].alt_text}" class="post-picture" />
+                                      <img src="${post.jetpack_featured_media_url}" alt="" class="post-picture" />
                                     </div>
                                     <div class="blog-container">
                                       <a href="blog_specific.html?id=${post.id}"><div class="post-summary">
@@ -32,8 +34,7 @@ async function blogPost(url) {
                                   </div> </a>`
     })
   } catch (err) {
-    console.log('error')
-    textContainer.innerHTML = displayError('we have found an error')
+    postContainer.innerHTML = displayError('we have found an error')
     function displayError(massage) {
       return `<div class ="found-error"> ${massage}</div>`
     }
@@ -41,3 +42,26 @@ async function blogPost(url) {
 }
 
 blogPost(url)
+
+// const allPosts =
+//   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?per_page=20&_embed'
+// // console.log(allPosts)
+// async function newUrl(allPosts) {
+//   const response = await fetch(allPosts)
+//   const results = await response.json()
+//   console.log(results)
+//   // postContainer.innerHTML = ''
+// }
+
+function onchange(event) {
+  const newUrl = url + '?per_page=20&_embed'
+  //console.log(newUrl)
+  postContainer.innerHTML = ''
+  blogPost(newUrl)
+  console.log('hello')
+}
+button.addEventListener('click', onchange)
+
+// <div class="picture-post">
+//   <img src="${post.jetpack_featured_media_url}" alt="${post._embedded['wp:featuredmedia']['0'].alt_text}" class="post-picture" />
+// </div>

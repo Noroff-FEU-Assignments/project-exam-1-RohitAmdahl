@@ -31,7 +31,7 @@ async function fetchPost() {
                                   </article>`
   } catch (error) {
     console.log('error')
-    textContainer.innerHTML = displayError('we have found an error')
+    postDetails.innerHTML = displayError('we have found an error')
     function displayError(massage) {
       return `<div class ="found-error"> ${massage}</div>`
     }

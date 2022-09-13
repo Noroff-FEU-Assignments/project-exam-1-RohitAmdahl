@@ -47,6 +47,8 @@ body {
   height: 100px;
   animation: spinning 2s linear infinite;
   display: flex;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 @keyframes spinning {
@@ -525,7 +527,7 @@ h2 {
 
 .post-picture {
   width: 100%;
-  max-width: 800px;
+  max-width: 550px;
   box-shadow: -73px -31px var(--footer-box-shadow-color);
   border: 10px solid var(--button-background);
   aspect-ratio: auto;
@@ -558,6 +560,32 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.load_more {
+  background-color: var(--button-background);
+  border: 3px solid var(--cta-small-button-border);
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--paragraph-heading-font-color);
+  box-shadow: var(--but-read-more-box-shadow);
+  padding: 15px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.load_more:hover {
+  transition: ease-in 0.1s;
+  background-color: var(--submit-form-button);
+  color: var(--paragraph-heading-font-color);
 }
 /* ------------------------------detail-specific page and  all category --------------------------- */
 .detail-img {
