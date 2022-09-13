@@ -1,7 +1,7 @@
 export const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts'
-console.log(url)
+// console.log(url)
 // const allPosts =
-//   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?per_page=20&_embed'
+//   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed'
 // console.log(allPosts)
 const button = document.querySelector('.load_more')
 console.log(button)
