@@ -41,10 +41,11 @@ export async function blogPost(url) {
 
 blogPost(url)
 
-function onchange(event) {
+function onchange() {
   const newUrl = url + '?per_page=20&_embed'
   postContainer.innerHTML = ''
   blogPost(newUrl)
+  button.style.display = 'none'
 }
 button.addEventListener('click', onchange)
 

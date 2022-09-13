@@ -586,6 +586,10 @@ h2 {
   background-color: var(--submit-form-button);
   color: var(--paragraph-heading-font-color);
 }
+
+.remove {
+  display: none;
+}
 /* ------------------------------detail-specific page and  all category --------------------------- */
 .detail-img {
   width: 100%;
