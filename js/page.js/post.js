@@ -52,3 +52,4 @@ button.addEventListener('click', onchange)
 // <div class="picture-post">
 //   <img src="${post.jetpack_featured_media_url}" alt="${post._embedded['wp:featuredmedia']['0'].alt_text}" class="post-picture" />
 // </div>
+// ${post._embedded['wp:featuredmedia']['0'].alt_text}
