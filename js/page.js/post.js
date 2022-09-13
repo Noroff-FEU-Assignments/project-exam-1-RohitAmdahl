@@ -43,22 +43,10 @@ export async function blogPost(url) {
 
 blogPost(url)
 
-// const allPosts =
-//   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?per_page=20&_embed'
-// // console.log(allPosts)
-// async function newUrl(allPosts) {
-//   const response = await fetch(allPosts)
-//   const results = await response.json()
-//   console.log(results)
-//   // postContainer.innerHTML = ''
-// }
-
 function onchange(event) {
   const newUrl = url + '?per_page=20&_embed'
-  //console.log(newUrl)
   postContainer.innerHTML = ''
   blogPost(newUrl)
-  console.log('hello')
 }
 button.addEventListener('click', onchange)
 
