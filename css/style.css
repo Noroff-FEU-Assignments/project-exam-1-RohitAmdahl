@@ -527,8 +527,8 @@ h2 {
 
 .post-picture {
   width: 100%;
-  max-width: 550px;
-  box-shadow: -73px -31px var(--footer-box-shadow-color);
+  max-width: 500px;
+  box-shadow: -40px -17px var(--footer-box-shadow-color);
   border: 10px solid var(--button-background);
   aspect-ratio: auto;
 }

@@ -7,29 +7,3 @@ const allPosts =
 console.log(allPosts)
 const button = document.querySelector('.load_more')
 console.log(button)
-
-// async function newUrl(allPosts) {
-//   const response = await fetch(allPosts)
-//   const results = await response.json()
-//   console.log(results)
-//   // postContainer.innerHTML = ''
-// }
-
-//load more posts
-button.addEventListener('click', () => {
-  console.log('hello')
-  const addArticles = document.querySelector('.post-blogs')
-  addArticles.forEach((post) => {
-    post.classList.remove('hidden')
-  })
-  loadMorePosts.style.display = 'none'
-})
-
-newUrl(allPosts)
-
-// function change() {
-//   const newUrl = url + 'allPosts'
-//   blogPost(newUrl)
-//   console.log('hello')
-// }
-// button.addEventListener('click', change)
