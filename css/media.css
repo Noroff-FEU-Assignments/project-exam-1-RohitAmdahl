@@ -94,9 +94,18 @@
     margin: 0 auto;
     font-size: 20px;
   }
+
   .blog-container figcaption {
     font-size: 25px;
     padding: 15px;
+  }
+
+  .blockquote_text {
+    text-align: center;
+  }
+
+  .blockquote_credit-me {
+    text-align: center;
   }
 
   .wrap_second,
@@ -125,5 +134,28 @@
     justify-content: center;
     align-items: center;
     max-width: 500px;
+    margin-top: auto;
+  }
+  .text-rightside {
+    font-size: 12px;
+  }
+  .background-color {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tea {
+    width: 100%;
+  }
+  .footer-logo {
+    border-right-width: 0px;
+  }
+  .footer-logo {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .copy-content {
+    padding: 20px;
   }
 }

@@ -16,7 +16,7 @@ async function getRenderCategory(url) {
       drafting.innerHTML += `<a href="/drawing.html?id=${getResults.id}"><article                  class="blog-artical">
                                     <h1 class="heading-post">${getResults.title.rendered}</h1>
                                     <div class="picture-post">
-                                      <img src="${getResults.jetpack_featured_media_url}" alt="" class="post-picture" />
+                                      <img src="${getResults.jetpack_featured_media_url}" alt="${link._embedded['wp:featuredmedia']['0'].alt_text}" class="post-picture" />
                                     </div>
                                     <div class="blog-container">
                                       <a href="blog_specific.html?id=${getResults.id}"><div class="post-summary">
