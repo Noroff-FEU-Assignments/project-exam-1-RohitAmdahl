@@ -611,7 +611,7 @@ h2 {
   display: none;
 }
 /* ------------Image model ------------------------ */
-.modalContainer {
+.image {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -619,7 +619,6 @@ h2 {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.733);
-  margin-top: -1px;
 }
 
 .modelpicture {

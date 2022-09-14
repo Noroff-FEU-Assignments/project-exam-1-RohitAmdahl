@@ -37,18 +37,19 @@ async function fetchPost() {
     }
   }
 
-  const modalContainer = document.querySelector('.modalContainer')
-  console.log(modalContainer)
-  const modalContent = document.querySelector('.modelpicture')
+  const picture = document.getElementById('image-model')
+  console.log(picture)
+  const modalContent = document.getElementById('model')
   console.log(modalContent)
 
-  const postImage = document.querySelectorAll('.post-picture')
-  console.log(postImage)
+  const image = document.querySelector('.post-picture')
+  console.log(image)
 
-  modalContainer.addEventListener('click', function () {
+  image.addEventListener('click', function () {
     console.log('hello')
-    modalContainer.style.display = 'flex'
-    link.src = this.src
+    picture.style.display = 'flex'
+    modalContent.src = this.src
+    console.log(['modalContent.src'])
   })
 }
 fetchPost()
