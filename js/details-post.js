@@ -15,7 +15,7 @@ async function fetchPost() {
   try {
     const response = await fetch(linkUrl)
     const link = await response.json()
-    console.log(link)
+    // console.log(link)
     title.innerHTML = `My Blog | ${link.title.rendered}`
     postDetails.innerHTML = ''
     postDetails.innerHTML += ` <article>
@@ -36,22 +36,19 @@ async function fetchPost() {
       return `<div class ="found-error"> ${massage}</div>`
     }
   }
-  // image model---
-  // const picture = document.querySelectorAll('.post-picture')
-  // console.log(picture)
-  let picture = [].forEach(function (pictures) {
-    const postImage = document.querySelectorAll('.post-picture')
-    console.log(pictures)
-    function popUpPicture() {
-      // console.log(postImage)
-      ImgSrc = ImgSrc
-      console.log(pictures)
-      // postImage.onclick = popUpPicture
-    }
-    pictures.addEventListener('click', popUpPicture)
+
+  const modalContainer = document.querySelector('.modalContainer')
+  console.log(modalContainer)
+  const modalContent = document.querySelector('.modelpicture')
+  console.log(modalContent)
+
+  const postImage = document.querySelectorAll('.post-picture')
+  console.log(postImage)
+
+  modalContainer.addEventListener('click', function () {
+    console.log('hello')
+    modalContainer.style.display = 'flex'
+    link.src = this.src
   })
-  const modelImg = document.querySelector('#model')
-  modelImg.style.display = 'block'
-  // image model stops ....
 }
 fetchPost()

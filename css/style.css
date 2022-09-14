@@ -611,7 +611,7 @@ h2 {
   display: none;
 }
 /* ------------Image model ------------------------ */
-.model-picture {
+.modalContainer {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -622,9 +622,11 @@ h2 {
   margin-top: -1px;
 }
 
-.image {
-  width: 50%;
+.modelpicture {
+  width: 100%;
+  max-width: 800px;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 /* ------------------------------detail-specific page and  all category --------------------------- */
