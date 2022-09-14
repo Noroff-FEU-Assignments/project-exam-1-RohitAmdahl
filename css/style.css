@@ -590,6 +590,23 @@ h2 {
 .remove {
   display: none;
 }
+/* ------------Image model ------------------------ */
+/* .model-picture {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.733);
+  margin-top: -1px;
+}
+
+.image {
+  width: 50%;
+  object-fit: cover;
+} */
+
 /* ------------------------------detail-specific page and  all category --------------------------- */
 .detail-img {
   width: 100%;
