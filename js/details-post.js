@@ -37,23 +37,23 @@ async function fetchPost() {
     }
   }
 
-  // const picture = document.getElementById('image-model')
-  // console.log(picture)
-  // const modalContent = document.getElementById('model')
-  // console.log(modalContent)
-  // const image = document.querySelector('.post-picture')
-  // console.log(image)
+  const picture = document.getElementById('image-model')
+  console.log(picture)
+  const content = document.getElementById('model')
+  console.log(content)
+  const image = document.querySelector('.post-picture')
+  console.log(image)
+  const close = document.querySelector('span')
+  console.log(close)
 
-  // image.addEventListener('click', function () {
-  //   console.log('hello')
-  //   picture.style.display = 'block'
-  //   modalContent.src = this.src
-  //   console.log(['modalContent.src'])
-  //   picture.onclick = function () {
-  //     const picture = document.getElementById('image-model')
-  //     console.log(picture)
-  //     picture.style.display = 'none'
-  //   }
-  // })
+  image.addEventListener('click', function () {
+    console.log('hello')
+    picture.style.display = 'block'
+    content.src = this.src
+    console.log(['content.src'])
+  })
+  close.onclick = function () {
+    close.style.display = 'none'
+  }
 }
 fetchPost()
