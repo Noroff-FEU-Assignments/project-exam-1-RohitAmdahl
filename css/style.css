@@ -611,22 +611,28 @@ h2 {
   display: none;
 }
 /* ------------Image model ------------------------ */
-.image {
+/* .image {
+  display: none;
   width: 100%;
   height: 100%;
+  top: 0;
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.733);
+  z-index: 100;
 }
 
 .modelpicture {
   width: 100%;
-  max-width: 800px;
+  max-width: 100px;
   object-fit: cover;
   margin: 0 auto;
 }
+#model {
+  max-width: 800px;
+} */
 
 /* ------------------------------detail-specific page and  all category --------------------------- */
 .detail-img {

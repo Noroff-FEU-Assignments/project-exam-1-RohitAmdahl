@@ -21,7 +21,7 @@ async function fetchPost() {
     postDetails.innerHTML += ` <article>
                                     <h1 class="heading-post">${link.title.rendered}</h1>
                                     <div class="picture-post">
-                                      <img src="${link.jetpack_featured_media_url}" alt="" class="post-picture" />
+                                      <img src="${link.jetpack_featured_media_url}" alt="${link._embedded['wp:featuredmedia']['0'].alt_text}" class="post-picture" />
                                     </div>
                                     <div class="blog-container">
                                       <div class="text-pic">
@@ -37,19 +37,23 @@ async function fetchPost() {
     }
   }
 
-  const picture = document.getElementById('image-model')
-  console.log(picture)
-  const modalContent = document.getElementById('model')
-  console.log(modalContent)
+  // const picture = document.getElementById('image-model')
+  // console.log(picture)
+  // const modalContent = document.getElementById('model')
+  // console.log(modalContent)
+  // const image = document.querySelector('.post-picture')
+  // console.log(image)
 
-  const image = document.querySelector('.post-picture')
-  console.log(image)
-
-  image.addEventListener('click', function () {
-    console.log('hello')
-    picture.style.display = 'flex'
-    modalContent.src = this.src
-    console.log(['modalContent.src'])
-  })
+  // image.addEventListener('click', function () {
+  //   console.log('hello')
+  //   picture.style.display = 'block'
+  //   modalContent.src = this.src
+  //   console.log(['modalContent.src'])
+  //   picture.onclick = function () {
+  //     const picture = document.getElementById('image-model')
+  //     console.log(picture)
+  //     picture.style.display = 'none'
+  //   }
+  // })
 }
 fetchPost()
