@@ -46,37 +46,3 @@ function onchange() {
   button.style.display = 'none'
 }
 button.addEventListener('click', onchange)
-
-//creating the modal
-
-//-----code stops here------
-// let Images = []
-
-// Images.forEach(function (pictures) {
-//   const postImage = document.querySelectorAll('.picture-post')
-//   console.log(pictures)
-//   function popUpPicture() {
-//     // console.log(postImage)
-//     console.log(pictures)
-//     // console.log('hello')
-//     postImage.onclick = popUpPicture
-//   }
-// })
-// let results
-
-// results.forEach(function (pictures) {
-//   const postImage = document.querySelectorAll('img')
-//   console.log(postImage)
-//   console.log(results)
-//   console.log(model)
-// })
-
-// const postImage = document.getElementById('postImage')
-// console.log(postImage)
-
-//  ((img) => {
-//     img.addEventListener("click", (e) => {
-//         imgSrc = e.target.src;
-//         console.log(imgSrc)
-//     });
-// });

@@ -11,12 +11,13 @@ async function blogPost(url) {
     console.log(results)
     post.innerHTML = ''
     results.forEach(function (postPic) {
-      post.innerHTML += ` <div class="slideshow">
+      post.innerHTML += `
+                          <a href="blog_specific.html?id=${postPic.id}"><div class="slideshow">
                           <img src="${postPic.jetpack_featured_media_url}" alt="" class="slideshow_img" />
-                          <p class="content read_more">
-                            ${postPic.excerpt.rendered}
+                          <p class="title">
+                            ${postPic.title.rendered}
                           </p>
-                          </div>`
+                          </div></a>`
     })
   } catch (err) {
     console.log(error)

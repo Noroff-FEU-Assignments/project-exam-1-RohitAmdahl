@@ -270,7 +270,7 @@ h2 {
 
 .slideshow_img {
   width: 100%;
-  max-width: 380px;
+  max-width: 250px;
   margin-top: 30px;
 }
 
@@ -340,7 +340,7 @@ h2 {
   color: var(--paragraph-heading-font-color);
 }
 
-.read_more {
+/* .read_more {
   font-size: 20px;
   font-weight: normal;
   background-color: var(--text_background-color);
@@ -348,7 +348,7 @@ h2 {
   color: var(--paragraph-heading-font-color);
   margin: 10px;
   margin: 0px auto;
-}
+} */
 
 .text-rightside {
   display: flex;
@@ -360,19 +360,37 @@ h2 {
   padding: 30px 0px;
 }
 
-.slideshow {
+/* .slideshow {
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
   justify-content: end;
-}
+} */
 
-.slideshow_carousel {
+/* .slideshow_carousel {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 900px;
   margin: 0 auto;
+} */
+
+.cta-read_more {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.cta-button {
+  background-color: var(--button-background);
+  border: 3px solid var(--cta-small-button-border);
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--paragraph-heading-font-color);
+  box-shadow: var(--but-read-more-box-shadow);
+  padding: 15px;
+  font-weight: bold;
 }
 
 .cta-button {
@@ -410,6 +428,8 @@ h2 {
   flex-wrap: wrap;
   width: 100%;
   max-width: 900px;
+  margin: 0 auto;
+  margin-top: 37px;
 }
 
 .contact {
@@ -591,7 +611,7 @@ h2 {
   display: none;
 }
 /* ------------Image model ------------------------ */
-/* .model-picture {
+.model-picture {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -605,7 +625,7 @@ h2 {
 .image {
   width: 50%;
   object-fit: cover;
-} */
+}
 
 /* ------------------------------detail-specific page and  all category --------------------------- */
 .detail-img {

@@ -20,13 +20,11 @@ async function fetchPost() {
     postDetails.innerHTML = ''
     postDetails.innerHTML += ` <article>
                                     <h1 class="heading-post">${link.title.rendered}</h1>
-
                                     <div class="picture-post">
                                       <img src="${link.jetpack_featured_media_url}" alt="" class="post-picture" />
                                     </div>
                                     <div class="blog-container">
                                       <div class="text-pic">
-
                                        ${link.content.rendered}
                                       </div>
                                     </div>
@@ -38,5 +36,22 @@ async function fetchPost() {
       return `<div class ="found-error"> ${massage}</div>`
     }
   }
+  // image model---
+  // const picture = document.querySelectorAll('.post-picture')
+  // console.log(picture)
+  let picture = [].forEach(function (pictures) {
+    const postImage = document.querySelectorAll('.post-picture')
+    console.log(pictures)
+    function popUpPicture() {
+      // console.log(postImage)
+      ImgSrc = ImgSrc
+      console.log(pictures)
+      // postImage.onclick = popUpPicture
+    }
+    pictures.addEventListener('click', popUpPicture)
+  })
+  const modelImg = document.querySelector('#model')
+  modelImg.style.display = 'block'
+  // image model stops ....
 }
 fetchPost()
