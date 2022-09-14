@@ -158,4 +158,50 @@
   .copy-content {
     padding: 20px;
   }
+  .has-medium-font-size {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 420) {
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 33px;
+  }
+
+  .drawing,
+  .art,
+  .d_render {
+    font-size: 29px;
+  }
+
+  .d_render {
+    font-size: 29px;
+  }
+
+  h2 {
+    font-size: 33px;
+  }
+
+  .number {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thin-arrow {
+    display: none;
+  }
+  .footer-logo {
+    display: block;
+  }
+  .layout-design figure img {
+    padding: 20px;
+  }
+
+  .layout-design figcaption {
+    font-size: 28px;
+  }
 }
