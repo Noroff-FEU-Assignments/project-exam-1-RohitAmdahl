@@ -204,4 +204,46 @@
   .layout-design figcaption {
     font-size: 28px;
   }
+
+  .heading-post {
+    font-size: 34px;
+  }
+  .cta-category {
+    height: 225px;
+    display: grid;
+  }
+  .cta-links-1 {
+    height: auto;
+    width: auto;
+  }
+  .cta-links-1 {
+    height: auto;
+    width: auto;
+  }
+  /* .cta-category {
+    width: fit-content;
+  } */
+  .category-heading {
+    text-align: center;
+  }
+  .heading-post {
+    font-size: 44px;
+  }
+  .address {
+    padding: 0;
+  }
+  .number {
+    padding: 0;
+  }
+  .icon-text {
+    padding: 0;
+  }
+  .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tea {
+    padding: 0;
+  }
 }
