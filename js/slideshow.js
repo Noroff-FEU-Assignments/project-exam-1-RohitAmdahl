@@ -32,28 +32,28 @@ async function blogPost(url) {
     }
   }
   //--making slider
-  const sliderImg = document.querySelectorAll('#slide')
-  console.log(sliderImg)
+
   const carouselSlider = document.querySelector('.carousel-slider')
   console.log(carouselSlider)
   const slider = document.querySelectorAll('.slideshow_items')
   const rightButton = document.getElementById('right-icon')
   const leftButton = document.getElementById('left-icon')
-  console.log(slider)
+  // console.log(slider)
   console.log(rightButton)
   console.log(leftButton)
 
-  rightButton.addEventListener('click', () => {
+  leftButton.addEventListener('click', () => {
     const img = document.querySelectorAll('.slideshow')
     carouselSlider.scrollLeft -= 125
     console.log('right')
   })
 
-  leftButton.addEventListener('click', () => {
+  rightButton.addEventListener('click', () => {
     const img = document.querySelectorAll('.slideshow')
     carouselSlider.scrollLeft += 125
     console.log('left')
   })
+  // const maxSlider =
 }
 
 blogPost(url)
