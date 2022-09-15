@@ -361,13 +361,11 @@ h2 {
   margin: 0 auto;
   position: inherit;
   overflow: scroll;
+  scroll-behavior: smooth;
   height: 550px;
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
-}
-.carousel-slider::-webkit-scrollbar {
-  display: none;
 }
 
 .slideshow_items {
