@@ -39,21 +39,22 @@ async function fetchPost() {
 
   const picture = document.getElementById('image-model')
   console.log(picture)
-  const content = document.getElementById('model')
-  console.log(content)
+  const modelPic = document.getElementById('model')
+  console.log(modelPic)
   const image = document.querySelector('.post-picture')
   console.log(image)
-  const close = document.querySelector('span')
-  console.log(close)
+  const exit = document.getElementById('exit')
+  console.log(exit)
 
-  image.addEventListener('click', function () {
+  image.onclick = function () {
     console.log('hello')
     picture.style.display = 'block'
-    content.src = this.src
-    console.log(['content.src'])
-  })
-  close.onclick = function () {
-    close.style.display = 'none'
+    modelPic.src = this.src
+    console.log(['modelPic.src'])
+  }
+  exit.onclick = () => {
+    picture.classList.add('remove')
+    console.log('close')
   }
 }
 fetchPost()
