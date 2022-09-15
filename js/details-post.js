@@ -53,7 +53,8 @@ async function fetchPost() {
     console.log(['modelPic.src'])
   }
   exit.onclick = () => {
-    picture.classList.add('remove')
+    picture.classList.remove('exit')
+    // picture.style.display = 'none'
     console.log('close')
   }
 }
