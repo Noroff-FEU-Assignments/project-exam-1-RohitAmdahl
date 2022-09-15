@@ -31,6 +31,11 @@ async function blogPost(url) {
       return `<div class ="found-error"> ${massage}</div>`
     }
   }
+  //--making slider
+  const slider = document.querySelector('.carousel-slider')
+  console.log(slider)
+  const progressBar = document.querySelector('.prog-bar-inner')
+  console.log(progressBar)
 }
 
 blogPost(url)
