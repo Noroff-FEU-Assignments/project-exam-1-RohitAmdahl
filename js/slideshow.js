@@ -12,8 +12,8 @@ async function blogPost(url) {
     post.innerHTML = ''
     results.forEach(function (postPic) {
       post.innerHTML += `
-                          <div class="slideshow">
-                          <img src="${postPic.jetpack_featured_media_url}" alt="" class="slideshow_img" />
+                          <div class="slideshow" >
+                          <img src="${postPic.jetpack_featured_media_url}" alt="" class="slideshow_img" id ="slide" />
                           <p class="title">
                             ${postPic.title.rendered}
                           </p>
@@ -32,10 +32,28 @@ async function blogPost(url) {
     }
   }
   //--making slider
-  const slider = document.querySelector('.carousel-slider')
+  const sliderImg = document.querySelectorAll('#slide')
+  console.log(sliderImg)
+  const carouselSlider = document.querySelector('.carousel-slider')
+  console.log(carouselSlider)
+  const slider = document.querySelectorAll('.slideshow_items')
+  const rightButton = document.getElementById('right-icon')
+  const leftButton = document.getElementById('left-icon')
   console.log(slider)
-  // const progressBar = document.querySelector('.prog-bar-inner')
-  // console.log(progressBar)
+  console.log(rightButton)
+  console.log(leftButton)
+
+  rightButton.addEventListener('click', () => {
+    const img = document.querySelectorAll('.slideshow')
+    carouselSlider.scrollLeft -= 125
+    console.log('right')
+  })
+
+  leftButton.addEventListener('click', () => {
+    const img = document.querySelectorAll('.slideshow')
+    carouselSlider.scrollLeft += 125
+    console.log('left')
+  })
 }
 
 blogPost(url)
