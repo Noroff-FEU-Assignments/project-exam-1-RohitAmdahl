@@ -21,10 +21,10 @@ async function blogPost(url) {
     })
   } catch (err) {
     console.log(error)
-    // post.innerHTML = displayError('we have found an error')
-    // function displayError(massage) {
-    //   return `<div class ="found-error"> ${massage}</div>`
-    // }
+    post.innerHTML = displayError('we have found an error')
+    function displayError(massage) {
+      return `<div class ="found-error"> ${massage}</div>`
+    }
   }
 }
 
