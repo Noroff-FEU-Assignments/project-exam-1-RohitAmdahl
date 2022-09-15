@@ -12,15 +12,20 @@ async function blogPost(url) {
     post.innerHTML = ''
     results.forEach(function (postPic) {
       post.innerHTML += `
-                          <a href="blog_specific.html?id=${postPic.id}"><div class="slideshow">
+                          <div class="slideshow">
                           <img src="${postPic.jetpack_featured_media_url}" alt="" class="slideshow_img" />
                           <p class="title">
                             ${postPic.title.rendered}
                           </p>
+                          <a href="blog_specific.html?id=${postPic.id}">
+                          <div>
+                            <button class="view-post">
+                              View-post
+                            </button>
+                          </div>
                           </div></a>`
     })
   } catch (err) {
-    console.log(error)
     post.innerHTML = displayError('we have found an error')
     function displayError(massage) {
       return `<div class ="found-error"> ${massage}</div>`

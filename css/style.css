@@ -141,7 +141,7 @@ nav {
   align-items: center;
 }
 
-/*----------------------------- header finished .main section starts from here --------------------------------- */
+/*----------------------- header finished .main section starts from here ------------------------------ */
 .grids {
   background-image: url(/images/grids.png);
 }
@@ -270,8 +270,14 @@ h2 {
 
 .slideshow_img {
   width: 100%;
-  max-width: 250px;
+  max-width: 450px;
   margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hobby-small {
@@ -339,6 +345,58 @@ h2 {
   font-weight: bold;
   color: var(--paragraph-heading-font-color);
 }
+/* ---------------------carousel--------------  */
+carousel-container {
+  width: 100%;
+  max-width: 500px;
+  outline: 2px solid black;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.slideshow_carousel {
+  outline: 2px red solid;
+  padding: 20px;
+  display: block ruby;
+  overflow: hidden;
+}
+.carousel-slider {
+  width: 100%;
+  overflow: hidden;
+  max-width: 500px;
+}
+/* .title {
+  font-size: 25px;
+}
+.carousel {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.carousel-slider {
+  position: relative;
+}
+.slideshow {
+  height: 300px;
+  background-color: #ee5f5f;
+} */
+
+.view-post {
+  padding: 10px 10px;
+  border: var(--but-read-more-text) 3px solid;
+  box-shadow: var(--but-read-more-box-shadow);
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.view-post:hover {
+  transition: ease-in 0.1s;
+  background-color: var(--submit-form-button);
+  color: var(--paragraph-heading-font-color);
+}
 
 /* .read_more {
   font-size: 20px;
@@ -359,21 +417,6 @@ h2 {
 .latest-blog {
   padding: 30px 0px;
 }
-
-/* .slideshow {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 900px;
-  margin: 0 auto;
-  justify-content: end;
-} */
-
-/* .slideshow_carousel {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 900px;
-  margin: 0 auto;
-} */
 
 .cta-read_more {
   display: flex;
