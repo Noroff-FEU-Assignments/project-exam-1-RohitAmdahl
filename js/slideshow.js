@@ -35,7 +35,7 @@ async function blogPost(url) {
 
   const carouselSlider = document.querySelector('.carousel-slider')
   console.log(carouselSlider)
-  const slider = document.querySelectorAll('.slideshow_items')
+  const slider = document.querySelector('.slideshow_items')
   const rightButton = document.getElementById('right-icon')
   const leftButton = document.getElementById('left-icon')
   // console.log(slider)
@@ -44,16 +44,15 @@ async function blogPost(url) {
 
   leftButton.addEventListener('click', () => {
     const img = document.querySelectorAll('.slideshow')
-    carouselSlider.scrollLeft -= 125
+    carouselSlider.scrollLeft -= 100
     console.log('right')
   })
 
   rightButton.addEventListener('click', () => {
     const img = document.querySelectorAll('.slideshow')
-    carouselSlider.scrollLeft += 125
+    carouselSlider.scrollLeft += 100
     console.log('left')
   })
-  // const maxSlider =
 }
 
 blogPost(url)

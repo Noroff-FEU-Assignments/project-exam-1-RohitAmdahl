@@ -277,6 +277,8 @@ h2 {
   flex-direction: column;
   text-align: center;
   padding: 20px;
+  height: 300px;
+  width: auto;
 
   margin-left: 0px;
   margin-right: 0px;
@@ -372,19 +374,6 @@ h2 {
   padding: 20px;
   display: block ruby;
 }
-/* .slideshow_items::-webkit-scrollbar {
-  height: 10px;
-  width: 5px;
-  border: 2px solid red;
-  outline: 2px solid black;
-}
-.slideshow_items::-webkit-scrollbar-track {
-  height: 10px;
-  width: 5px;
-  border: 2px rgb(34, 33, 33) solid;
-  outline: 2px rgb(77, 44, 107) solid;
-  background-color: #0cfaac;
-} */
 
 .title {
   font-size: 25px;
@@ -398,7 +387,7 @@ h2 {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  top: 8px;
+  top: 30px;
 }
 
 .read-post {
