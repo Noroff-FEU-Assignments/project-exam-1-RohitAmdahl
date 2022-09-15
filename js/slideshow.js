@@ -34,8 +34,8 @@ async function blogPost(url) {
   //--making slider
   const slider = document.querySelector('.carousel-slider')
   console.log(slider)
-  const progressBar = document.querySelector('.prog-bar-inner')
-  console.log(progressBar)
+  // const progressBar = document.querySelector('.prog-bar-inner')
+  // console.log(progressBar)
 }
 
 blogPost(url)

@@ -360,32 +360,29 @@ h2 {
   max-width: 960px;
   margin: 0 auto;
   position: inherit;
-  overflow: scroll;
+  overflow-x: auto;
   scroll-behavior: smooth;
   height: 550px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
 }
 
 .slideshow_items {
   padding: 20px;
   display: block ruby;
 }
-.progress-bar {
+/* .progress-bar {
   width: 100%;
   height: 10px;
   max-width: 960px;
   margin: 0 auto;
   height: 10px;
   border: 1px solid var(--paragraph-heading-font-color);
-}
+} */
 
-.prog-bar-inner {
-  width: 0%;
+/* .prog-bar-inner::-webkit-scrollbar-thumb {
+  width: 10%;
   background: black;
   height: 105%;
-}
+} */
 
 .title {
   font-size: 25px;
