@@ -276,8 +276,7 @@ h2 {
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
 .hobby-small {
@@ -346,24 +345,37 @@ h2 {
   color: var(--paragraph-heading-font-color);
 }
 /* ---------------------carousel--------------  */
-carousel-container {
+/* carousel-container {
   width: 100%;
   max-width: 500px;
   outline: 2px solid black;
   overflow: hidden;
   max-width: 500px;
-}
+} */
 
 .slideshow_carousel {
-  outline: 2px red solid;
   padding: 20px;
   display: block ruby;
   overflow: hidden;
+  outline: 2px red solid;
 }
+
 .carousel-slider {
   width: 100%;
   overflow: hidden;
-  max-width: 500px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 25px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.read_post {
+  margin: 0 auto;
+  text-align: center;
 }
 /* .title {
   font-size: 25px;
@@ -383,7 +395,7 @@ carousel-container {
   background-color: #ee5f5f;
 } */
 
-.view-post {
+.read-post {
   padding: 10px 10px;
   border: var(--but-read-more-text) 3px solid;
   box-shadow: var(--but-read-more-box-shadow);
@@ -392,7 +404,7 @@ carousel-container {
   font-size: 20px;
 }
 
-.view-post:hover {
+.read-post:hover {
   transition: ease-in 0.1s;
   background-color: var(--submit-form-button);
   color: var(--paragraph-heading-font-color);

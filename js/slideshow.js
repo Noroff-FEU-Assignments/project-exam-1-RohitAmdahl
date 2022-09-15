@@ -18,9 +18,9 @@ async function blogPost(url) {
                             ${postPic.title.rendered}
                           </p>
                           <a href="blog_specific.html?id=${postPic.id}">
-                          <div>
-                            <button class="view-post">
-                              View-post
+                          <div class="read_post">
+                            <button class="read-post">
+                              Read-post
                             </button>
                           </div>
                           </div></a>`
