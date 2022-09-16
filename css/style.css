@@ -274,7 +274,6 @@ h2 {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   text-align: center;
   padding: 20px;
   height: 300px;
@@ -310,6 +309,8 @@ h2 {
 .wrappercontainer {
   margin: 0 auto;
   max-width: 900px;
+  position: relative;
+  top: 30px;
 }
 
 .drawing {
@@ -351,6 +352,7 @@ h2 {
   padding: 0px 10px;
   margin: 0;
   overflow: hidden;
+  background-color: var(--text_background-color);
 }
 
 .carousel-slider {
@@ -372,7 +374,6 @@ h2 {
   font-size: 25px;
   margin: 0 auto;
   text-align: center;
-  font-weight: bold;
   pad: 10px;
 }
 

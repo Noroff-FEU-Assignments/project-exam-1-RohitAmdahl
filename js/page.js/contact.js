@@ -35,13 +35,13 @@ function validationForm() {
     emailError.style.display = 'block'
   }
 
-  if (checkLength(firstName.value, 14) === true) {
+  if (checkLength(subject.value, 14) === true) {
     subjectError.style.display = 'none'
   } else {
     subjectError.style.display = 'block'
   }
 
-  if (checkLength(firstName.value, 24) === true) {
+  if (checkLength(message.value, 24) === true) {
     messageError.style.display = 'none'
   } else {
     messageError.style.display = 'block'
