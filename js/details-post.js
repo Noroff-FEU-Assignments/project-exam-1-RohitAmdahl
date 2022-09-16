@@ -8,7 +8,7 @@ const linkUrl =
 console.log(linkUrl)
 const postDetails = document.querySelector('.post-Container')
 const title = document.querySelector('.tittleInfo')
-title.innerHTML = `My Blog | ${link.title.rendered}`
+
 const loading = document.querySelector('.loader')
 console.log(postDetails)
 
@@ -18,6 +18,7 @@ async function fetchPost() {
     const link = await response.json()
     // console.log(link)
     postDetails.innerHTML = ''
+    title.innerHTML = `My Blog | ${link.title.rendered}`
     postDetails.innerHTML += ` <article>
                                     <h1 class="heading-post">${link.title.rendered}</h1>
                                     <div class="picture-post">

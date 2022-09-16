@@ -9,10 +9,12 @@ let pageNumber = 0
 async function blogPost() {
   pageNumber++
   const url =
-    'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=' + pageNumber
-  console.log(url)
+    //   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=' + pageNumber
+    // console.log(url)
+    'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page_embed'
   if (pageNumber === 1) {
     postContainer.innerHTML = ''
+    // button.style.display = 'none'
   }
 
   try {
