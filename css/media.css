@@ -163,7 +163,7 @@
   }
 }
 
-@media screen and (max-width: 420) {
+@media screen and (max-width: 420px) {
   body {
     overflow-x: hidden;
   }
@@ -234,6 +234,7 @@
   }
   .number {
     padding: 0;
+    width: 300px;
   }
   .icon-text {
     padding: 0;
@@ -245,5 +246,8 @@
   }
   .tea {
     padding: 0;
+  }
+  .post-picture {
+    box-shadow: none;
   }
 }
