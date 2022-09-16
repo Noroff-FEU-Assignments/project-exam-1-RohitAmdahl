@@ -4,10 +4,38 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.scroll-top {
+  height: 36px;
+  width: 41px;
+  background-color: var(--footer-text-box);
+  box-shadow: 1px 1px 20px var(--cta-small-shadow);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.scroll-top:hover {
+  transition: 0.3s ease-in-out;
+  color: #2759f0;
+}
+up-cta {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+
+.fa-solid.fa-arrow-up {
+  font-size: 30px;
+  cursor: pointer;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 :root {

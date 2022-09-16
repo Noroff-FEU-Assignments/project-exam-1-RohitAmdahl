@@ -46,3 +46,10 @@ function onchange() {
   button.style.display = 'none'
 }
 button.addEventListener('click', onchange)
+
+const scrollTop = document.querySelector('.scroll-top')
+
+scrollTop.addEventListener('click', () => {
+  console.log('i m up ')
+  window.scrollTo(0, 0)
+})
