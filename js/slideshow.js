@@ -45,12 +45,12 @@ async function blogPost(url) {
   // console.log(leftButton)
 
   leftButton.addEventListener('click', () => {
-    carouselSlider.scrollLeft -= 100
+    carouselSlider.scrollLeft -= 150
     console.log('right')
   })
 
   rightButton.addEventListener('click', () => {
-    carouselSlider.scrollLeft += 100
+    carouselSlider.scrollLeft += 150
     console.log('left')
   })
 }

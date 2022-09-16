@@ -298,13 +298,14 @@ h2 {
   padding-bottom: 10px;
   padding-top: 50px;
   font-weight: bold;
+  margin: 0 auto;
 }
 
 .wrap_second {
   display: flex;
   flex-wrap: wrap;
   font-weight: bold;
-  margin-top: 40px;
+  margin: 0 auto;
 }
 
 .wrappercontainer {
@@ -313,7 +314,6 @@ h2 {
 }
 
 .drawing {
-  margin-top: 50px;
   font-size: 2em;
   text-align: left;
   padding: 10px;
@@ -324,7 +324,6 @@ h2 {
 
 .art,
 .d_render {
-  margin-top: 50px;
   font-size: 2em;
   text-align: right;
   padding: 10px;
