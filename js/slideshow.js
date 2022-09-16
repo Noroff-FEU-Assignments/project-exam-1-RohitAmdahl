@@ -34,22 +34,20 @@ async function blogPost(url) {
   //--making slider
 
   const carouselSlider = document.querySelector('.carousel-slider')
-  console.log(carouselSlider)
+  // console.log(carouselSlider)
   const slider = document.querySelector('.slideshow_items')
   const rightButton = document.getElementById('right-icon')
   const leftButton = document.getElementById('left-icon')
-  // console.log(slider)
-  console.log(rightButton)
-  console.log(leftButton)
+  //  console.log(slider)
+  // console.log(rightButton)
+  // console.log(leftButton)
 
   leftButton.addEventListener('click', () => {
-    const img = document.querySelectorAll('.slideshow')
     carouselSlider.scrollLeft -= 100
     console.log('right')
   })
 
   rightButton.addEventListener('click', () => {
-    const img = document.querySelectorAll('.slideshow')
     carouselSlider.scrollLeft += 100
     console.log('left')
   })
