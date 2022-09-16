@@ -250,4 +250,7 @@
   .post-picture {
     box-shadow: none;
   }
+  .blog-container figure img {
+    height: 260px;
+  }
 }
