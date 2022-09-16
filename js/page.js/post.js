@@ -1,14 +1,23 @@
-const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts'
 const button = document.querySelector('.load_more')
 const title = document.querySelector('.tittleInfo')
+title.innerHTML = 'Design Blog | Blog'
 const postContainer = document.querySelector('.post-blogs')
 const loading = document.querySelector('.loader')
-async function blogPost(url) {
+
+let pageNumber = 0
+
+async function blogPost() {
+  pageNumber++
+  const url =
+    'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=' + pageNumber
+  console.log(url)
+  if (pageNumber === 1) {
+    postContainer.innerHTML = ''
+  }
+
   try {
     const response = await fetch(url)
     const results = await response.json()
-    title.innerHTML = 'Design Blog | Blog'
-    postContainer.innerHTML = ''
     results.forEach(function (post) {
       postContainer.innerHTML += `<article class="blog-artical">
                                     <h1 class="heading-post" id ="postImage">${post.title.rendered}</h1>
@@ -37,15 +46,10 @@ async function blogPost(url) {
   }
 }
 
-blogPost(url)
+blogPost()
 
-function onchange() {
-  const newUrl = url + '?per_page=20&_embed'
-  postContainer.innerHTML = ''
-  blogPost(newUrl)
-  button.style.display = 'none'
-}
-button.addEventListener('click', onchange)
+// button.style.display = 'none'
+button.addEventListener('click', blogPost)
 
 const scrollTop = document.querySelector('.scroll-top')
 
