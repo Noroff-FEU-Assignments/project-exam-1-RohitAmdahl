@@ -236,16 +236,16 @@ h2 {
   padding: 0%;
   box-shadow: -18px -17px;
   color: var(--picture-shadow);
-  border-bottom: 8px solid black;
+  padding: 20px;
+  border: 1px solid;
 }
 
 .picture-drawing {
   width: 100%;
+  margin-bottom: 16px;
   max-width: 380px;
-  object-fit: cover;
-  height: max-content;
-  padding: 0%;
-  border-bottom: 8px solid black;
+  padding: 30px;
+  border: 1px solid;
 }
 
 .picture:hover {
@@ -295,8 +295,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-  padding-bottom: 10px;
-  padding-top: 50px;
+
   font-weight: bold;
   margin: 0 auto;
 }
@@ -314,9 +313,8 @@ h2 {
 }
 
 .drawing {
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: left;
-  padding: 10px;
   border-bottom-width: 5px;
   border-bottom-style: solid;
   color: var(--paragraph-heading-font-color);
@@ -324,7 +322,7 @@ h2 {
 
 .art,
 .d_render {
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: right;
   padding: 10px;
   border-bottom-width: 5px;
