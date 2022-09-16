@@ -13,10 +13,12 @@ async function blogPost(url) {
     results.forEach(function (postPic) {
       post.innerHTML += `
                           <div class="slideshow" >
+                          <div class ="img">
                           <img src="${postPic.jetpack_featured_media_url}" alt="" class="slideshow_img" id ="slide" />
                           <p class="title">
                             ${postPic.title.rendered}
                           </p>
+                          </div>
                           <a href="blog_specific.html?id=${postPic.id}">
                           <div class="read_post">
                             <button class="read-post">
