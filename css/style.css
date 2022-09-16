@@ -364,9 +364,6 @@ h2 {
   overflow-x: auto;
   scroll-behavior: smooth;
   height: 550px;
-  /* -webkit-overflow-scrolling: touch; */
-  /* -ms-overflow-style: none;
-  scrollbar-width: none; */
 }
 
 .slideshow_items {
@@ -383,10 +380,8 @@ h2 {
 }
 
 .read_post {
-  margin: 0 auto;
   text-align: center;
-  position: relative;
-  top: 30px;
+  cursor: pointer;
 }
 
 .read-post {
@@ -396,6 +391,7 @@ h2 {
   background-color: #ffffff;
   font-weight: bold;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .read-post:hover {
