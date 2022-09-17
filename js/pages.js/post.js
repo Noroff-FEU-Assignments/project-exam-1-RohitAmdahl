@@ -5,6 +5,8 @@ const postContainer = document.querySelector('.post-blogs')
 const loading = document.querySelector('.loader')
 
 let pageNumber = 0
+const maximumPages = response.headers.get('x-wp-totalpages')
+console.log(maximumPages)
 
 async function blogPost() {
   pageNumber++
@@ -12,13 +14,15 @@ async function blogPost() {
     'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=' + pageNumber
   console.log(url)
 
-  if (pageNumber === 1) {
+  if (pageNumber(maximumPages) === pageNumber) {
     postContainer.innerHTML = ''
     // button.style.display = 'none'
   }
 
   try {
     const response = await fetch(url)
+    const maximumPages = response.headers.get('x-wp-totalpages')
+    console.log(maximumPages)
     const results = await response.json()
     results.forEach(function (post) {
       postContainer.innerHTML += `<article class="blog-artical">

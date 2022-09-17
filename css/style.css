@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,7 +21,13 @@ body {
 }
 .scroll-top:hover {
   transition: 0.3s ease-in-out;
-  color: #2759f0;
+  box-shadow: 10.4px 10.4px 2.2px rgba(0, 0, 0, 0.038),
+    19.7px 19.7px 5.3px rgba(0, 0, 0, 0.058),
+    28.2px 28.2px 10px rgba(0, 0, 0, 0.071),
+    37.2px 37.2px 17.9px rgba(0, 0, 0, 0.078),
+    51px 51px 33.4px rgba(0, 0, 0, 0.081), 100px 100px 80px rgba(0, 0, 0, 0.08);
+  background-color: var(--submit-form-button);
+  padding: 10px;
 }
 .up-cta {
   display: flex;

@@ -56,3 +56,9 @@ async function blogPost(url) {
 }
 
 blogPost(url)
+
+const scrollTop = document.querySelector('.scroll-top')
+
+scrollTop.addEventListener('click', () => {
+  window.scrollTo(0, 0)
+})
