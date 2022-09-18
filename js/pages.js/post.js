@@ -31,10 +31,12 @@ async function blogPost() {
     console.log(maximumPages)
     const results = await response.json()
     results.forEach(function (post) {
+      const altTText = post._embedded?.['wp:featuredmedia'][0].alt_text
+      console.log(altTText)
       postContainer.innerHTML += `<article class="blog-artical">
                                     <h1 class="heading-post" id ="postImage">${post.title.rendered}</h1>
                                     <div class="picture-post">
-                                      <img src="${post.jetpack_featured_media_url}" alt="" class="post-picture" />
+                                      <img src="${post.jetpack_featured_media_url}" alt="${altTText}" class="post-picture" />
                                     </div>
                                     <div class="blog-container">
                                       <a href="blog_specific.html?id=${post.id}"><div class="post-summary">

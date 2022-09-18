@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  outline: 2px solid red;
 }
 
 body {
@@ -19,6 +18,7 @@ body {
   box-shadow: 1px 1px 20px var(--cta-small-shadow);
   cursor: pointer;
   border-radius: 5px;
+  border: 1px solid;
 }
 .scroll-top:hover {
   transition: 0.3s ease-in-out;
@@ -188,6 +188,7 @@ h2 {
   text-align: center;
   font-size: var(--main-heading);
   color: var(--paragraph-heading-font-color);
+
   /* padding: 25px 0px; */
 }
 
@@ -200,8 +201,13 @@ h2 {
 .leonardo-vinci {
   display: none;
   width: 100%;
-  max-width: 100px;
+  max-width: 200px;
   position: absolute;
+  box-shadow: 10.4px 10.4px 2.2px rgba(0, 0, 0, 0.038),
+    19.7px 19.7px 5.3px rgba(0, 0, 0, 0.058),
+    28.2px 28.2px 10px rgba(0, 0, 0, 0.071),
+    37.2px 37.2px 17.9px rgba(0, 0, 0, 0.078),
+    51px 51px 33.4px rgba(0, 0, 0, 0.081), 100px 100px 80px rgba(0, 0, 0, 0.08);
 }
 
 .arrow-category {
@@ -278,7 +284,7 @@ h2 {
 .picture-drawing {
   width: 100%;
   margin-bottom: 16px;
-  max-width: 380px;
+  max-width: 350px;
   padding: 30px;
   border: 1px solid;
 
@@ -597,6 +603,10 @@ h2 {
 
 .copy-write {
   background-color: var(--heading-background-color);
+}
+
+.leonardo-vinci {
+  border: 10px solid var(--category-art);
 }
 
 .copy-content {

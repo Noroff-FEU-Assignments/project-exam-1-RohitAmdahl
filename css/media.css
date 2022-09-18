@@ -88,6 +88,11 @@
     height: 350px;
   }
 
+  .post-picture {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   .text-pic {
     width: 100%;
     max-width: 930px;
@@ -115,18 +120,23 @@
     margin: 0 auto;
     max-width: fit-content;
   }
+
   .arrow-footer,
   .flip,
   .arrow-category {
+    margin: 0;
     display: none;
   }
+
   .drawing {
     margin: 10px;
   }
+
   .picture,
   .picture-drawing {
     padding: 20px;
   }
+
   .art,
   .d_render {
     display: flex;
@@ -136,30 +146,48 @@
     max-width: 500px;
     margin-top: auto;
   }
+
   .text-rightside {
     font-size: 12px;
   }
-  .background-color {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .tea {
     width: 100%;
   }
+
   .footer-logo {
     border-right-width: 0px;
   }
+
   .footer-logo {
     margin: 0 auto;
     padding: 10px;
   }
+
   .copy-content {
     padding: 20px;
   }
+
   .has-medium-font-size {
     font-size: 18px;
+  }
+
+  .wrapper-box {
+    display: flex;
+
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .arrow-footer {
+    position: inherit;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .carousel-slider {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -189,8 +217,16 @@
   .number {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
+  .address {
+    padding: 0;
+  }
+
+  .icon-text {
+    padding: 0;
+  }
   .thin-arrow {
     display: none;
   }
@@ -229,9 +265,7 @@
   .heading-post {
     font-size: 44px;
   }
-  .address {
-    padding: 0;
-  }
+
   .number {
     padding: 0;
     width: 300px;
@@ -252,5 +286,8 @@
   }
   .blog-container figure img {
     height: 260px;
+  }
+  .load_more {
+    width: 56%;
   }
 }
