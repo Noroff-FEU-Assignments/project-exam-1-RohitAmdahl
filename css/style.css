@@ -40,7 +40,7 @@ body {
 }
 
 .scroll-top {
-  height: 36px;
+  height: 40px;
   width: 41px;
   background-color: var(--footer-text-box);
   box-shadow: 1px 1px 20px var(--cta-small-shadow);

@@ -4,31 +4,24 @@ title.innerHTML = 'Design Blog | Blog'
 const postContainer = document.querySelector('.post-blogs')
 const loading = document.querySelector('.loader')
 
-let pageNumber = 0
-const maximumPages = response.headers.get('x-wp-totalpages')
-console.log(maximumPages)
+// const url =
+//   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=' + pageNumber
+// console.log(url)
 
+let pageNumber = 0
 async function blogPost() {
   pageNumber++
-  // const url =
-  //   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=' + pageNumber
-  // console.log(url)
-
   const url =
     'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=' +
     pageNumber +
     '&_embed'
-  console.log(url)
-
   if (pageNumber === 1) {
     postContainer.innerHTML = ''
   }
-
   try {
     const response = await fetch(url)
-    const maximumPages = response.headers.get('x-wp-totalpages')
-    console.log(maximumPages)
     const results = await response.json()
+
     results.forEach(function (post) {
       const altTText = post._embedded?.['wp:featuredmedia'][0].alt_text
       console.log(altTText)
@@ -56,6 +49,11 @@ async function blogPost() {
     function displayError(massage) {
       return `<div class ="found-error"> ${massage}</div>`
     }
+  }
+
+  button.onclick = () => {
+    console.log('object')
+    button.style.display = 'none'
   }
 }
 
