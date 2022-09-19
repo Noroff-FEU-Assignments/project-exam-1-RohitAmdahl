@@ -59,7 +59,6 @@ async function blogPost() {
 
 blogPost()
 
-// button.style.display = 'none'
 button.addEventListener('click', blogPost)
 
 const scrollTop = document.querySelector('.scroll-top')
