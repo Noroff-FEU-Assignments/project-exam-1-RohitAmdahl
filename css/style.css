@@ -758,6 +758,7 @@ h2 {
   padding: 25px;
   background: var(--footer-box-shadow-color);
   color: var(--paragraph-heading-font-color);
+  text-align: center;
 }
 
 .wp-block-image.size-full {
