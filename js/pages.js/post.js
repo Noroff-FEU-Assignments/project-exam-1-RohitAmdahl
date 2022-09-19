@@ -1,7 +1,7 @@
+const postContainer = document.querySelector('.post-blogs')
 const button = document.querySelector('.load_more')
 const title = document.querySelector('.tittleInfo')
 title.innerHTML = 'Design Blog | Blog'
-const postContainer = document.querySelector('.post-blogs')
 const loading = document.querySelector('.loader')
 
 // const url =
@@ -24,7 +24,6 @@ async function blogPost() {
 
     results.forEach(function (post) {
       const altTText = post._embedded?.['wp:featuredmedia'][0].alt_text
-      console.log(altTText)
       postContainer.innerHTML += `<article class="blog-artical">
                                     <h1 class="heading-post" id ="postImage">${post.title.rendered}</h1>
                                     <div class="picture-post">
@@ -52,7 +51,6 @@ async function blogPost() {
   }
 
   button.onclick = () => {
-    console.log('object')
     button.style.display = 'none'
   }
 }

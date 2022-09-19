@@ -1,9 +1,6 @@
 const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed'
 console.log(url)
-// const button = document.querySelector('.load_more')
 const post = document.querySelector('.slideshow_items')
-// const postContainer = document.querySelector('.post-blogs')
-// const loading = document.querySelector('.loader')
 async function blogPost(url) {
   try {
     const response = await fetch(url)
