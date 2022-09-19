@@ -15,13 +15,17 @@ async function blogPost() {
     'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=' +
     pageNumber +
     '&_embed'
+  console.log(url)
+
+  // const search =
+  //   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?search=&_embed'
+  // console.log(search)
   if (pageNumber === 1) {
     postContainer.innerHTML = ''
   }
   try {
     const response = await fetch(url)
     const results = await response.json()
-
     results.forEach(function (post) {
       const altTText = post._embedded?.['wp:featuredmedia'][0].alt_text
       postContainer.innerHTML += `<article class="blog-artical">
@@ -62,7 +66,6 @@ button.addEventListener('click', blogPost)
 const scrollTop = document.querySelector('.scroll-top')
 
 scrollTop.addEventListener('click', function () {
-  // window.scrollTo(0, 0)
   window.scrollTo({
     top: 0,
     left: 0,
