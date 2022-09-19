@@ -14,7 +14,8 @@ async function getRenderCategory(url) {
     postRender.innerHTML = ' '
     renders.forEach(function (getRenders) {
       title.innerHTML = `My Blog | ${getRenders.title.rendered}`
-      postRender.innerHTML += `<a href="/render.html?id=${getRenders.id}"><article                  class="blog-artical">
+      postRender.innerHTML += `<a href="/render.html?id=${getRenders.id}">
+                                  <article class="blog-artical">
                                     <h1 class="heading-post">${getRenders.title.rendered}</h1>
                                     <div class="picture-post">
                                       <img src="${getRenders.jetpack_featured_media_url}" alt="" class="post-picture" />
