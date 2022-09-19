@@ -5,8 +5,8 @@ const postContainer = document.querySelector('.post-blogs')
 const loading = document.querySelector('.loader')
 
 let pageNumber = 0
-// const maximumPages = response.headers.get('x-wp-totalpages')
-// console.log(maximumPages)
+const maximumPages = response.headers.get('x-wp-totalpages')
+console.log(maximumPages)
 
 async function blogPost() {
   pageNumber++
@@ -22,7 +22,6 @@ async function blogPost() {
 
   if (pageNumber === 1) {
     postContainer.innerHTML = ''
-    // button.style.display = 'none'
   }
 
   try {

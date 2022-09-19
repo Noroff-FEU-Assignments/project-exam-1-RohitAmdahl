@@ -47,6 +47,9 @@ body {
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid;
+  box-shadow: 22px 22px 40px rgba(0, 0, 0, 0.046),
+    38.6px 38.6px 66.2px rgba(0, 0, 0, 0.057),
+    51px 51px 74.8px rgba(0, 0, 0, 0.064), 100px 100px 104px rgba(0, 0, 0, 0.07);
 }
 .scroll-top:hover {
   transition: 0.3s ease-in-out;
