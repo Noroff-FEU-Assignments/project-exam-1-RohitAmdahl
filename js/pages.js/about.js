@@ -1,3 +1,4 @@
+//-------------------About me page API call----------
 const aboutMe = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/pages/118'
 console.log(aboutMe)
 const aboutPage = document.querySelector('.post-blogs')
@@ -10,7 +11,6 @@ async function fetchPage() {
   try {
     const response = await fetch(aboutMe)
     const results = await response.json()
-    console.log(results)
     title.innerHTML = 'Design blog | About me'
     aboutPage.innerHTML = ''
     aboutPage.innerHTML += `<div class="blog-artical  grids">

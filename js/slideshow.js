@@ -30,16 +30,13 @@ async function blogPost(url) {
       return `<div class ="found-error"> ${massage}</div>`
     }
   }
-  //--making slider
+
+  //------------making slide show
 
   const carouselSlider = document.querySelector('.carousel-slider')
-  // console.log(carouselSlider)
   const slider = document.querySelector('.slideshow_items')
   const rightButton = document.getElementById('right-icon')
   const leftButton = document.getElementById('left-icon')
-  //  console.log(slider)
-  // console.log(rightButton)
-  // console.log(leftButton)
 
   leftButton.addEventListener('click', () => {
     carouselSlider.scrollLeft -= 150
@@ -54,8 +51,8 @@ async function blogPost(url) {
 
 blogPost(url)
 
+//-----scroll function on the page----
 const scrollTop = document.querySelector('.scroll-top')
-
 scrollTop.addEventListener('click', () => {
   // window.scrollTo(0, 0)
   window.scrollTo({

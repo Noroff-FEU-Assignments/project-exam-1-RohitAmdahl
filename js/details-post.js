@@ -16,7 +16,6 @@ async function fetchPost() {
   try {
     const response = await fetch(linkUrl)
     const link = await response.json()
-    // console.log(link)
     postDetails.innerHTML = ''
     title.innerHTML = `My Blog | ${link.title.rendered}`
     postDetails.innerHTML += ` <article>
@@ -38,6 +37,7 @@ async function fetchPost() {
     }
   }
 
+  // ----------image model ---------------------
   const picture = document.getElementById('image-model')
   console.log(picture)
   const modelPic = document.getElementById('model')
