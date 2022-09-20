@@ -184,6 +184,11 @@ nav {
   background-image: url(/images/grids.png);
 }
 
+.aligncenter.size-large.is-resized {
+  background-image: url(/images/about-me-background.jpg);
+  background-repeat: no-repeat;
+}
+
 h1,
 h2 {
   margin: 0 auto;
