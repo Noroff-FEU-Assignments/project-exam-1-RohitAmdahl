@@ -191,6 +191,7 @@ h2 {
   text-align: center;
   font-size: var(--main-heading);
   color: var(--paragraph-heading-font-color);
+  text-shadow: -2px 5px 15px #6b68c4;
 }
 
 .quote {
