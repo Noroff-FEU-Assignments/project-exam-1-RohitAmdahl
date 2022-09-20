@@ -1,18 +1,18 @@
-const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?categories=15'
-console.log(url)
-const drafting = document.querySelector('.post-Container')
-const title = document.querySelector('.tittleInfo')
-const loading = document.querySelector('.loader')
-console.log(drafting)
+const url = "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?categories=15";
+console.log(url);
+const drafting = document.querySelector(".post-Container");
+const title = document.querySelector(".tittleInfo");
+const loading = document.querySelector(".loader");
+console.log(drafting);
 
 async function getRenderCategory(url) {
   try {
-    const response = await fetch(url)
-    const getDrafting = await response.json()
-    console.log(getDrafting)
-    drafting.innerHTML = ' '
+    const response = await fetch(url);
+    const getDrafting = await response.json();
+    console.log(getDrafting);
+    drafting.innerHTML = " ";
     getDrafting.forEach(function (getResults) {
-      title.innerHTML = `My Blog | ${getResults.title.rendered}`
+      title.innerHTML = `My Blog | ${getResults.title.rendered}`;
       drafting.innerHTML += `<a href="/drawing.html?id=${getResults.id}"><article                  class="blog-artical">
                                     <h1 class="heading-post">${getResults.title.rendered}</h1>
                                     <div class="picture-post">
@@ -30,14 +30,14 @@ async function getRenderCategory(url) {
                                     <button class="cta-button">
                                        Read more about this post
                                     </button>
-                                  </div> </a>`
-    })
+                                  </div> </a>`;
+    });
   } catch (error) {
-    console.log(error)
-    drafting.innerHTML = displayError('we have found an error')
+    console.log(error);
+    drafting.innerHTML = displayError("we have found an error");
     function displayError(massage) {
-      return `<div class ="found-error"> ${massage}</div>`
+      return `<div class ="found-error"> ${massage}</div>`;
     }
   }
 }
-getRenderCategory(url)
+getRenderCategory(url);

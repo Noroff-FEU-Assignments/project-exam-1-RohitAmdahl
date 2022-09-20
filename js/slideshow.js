@@ -1,12 +1,12 @@
-const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed'
-console.log(url)
-const post = document.querySelector('.slideshow_items')
+const url = "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed";
+console.log(url);
+const post = document.querySelector(".slideshow_items");
 async function blogPost(url) {
   try {
-    const response = await fetch(url)
-    const results = await response.json()
-    console.log(results)
-    post.innerHTML = ''
+    const response = await fetch(url);
+    const results = await response.json();
+    console.log(results);
+    post.innerHTML = "";
     results.forEach(function (postPic) {
       post.innerHTML += `
                           <div class="slideshow" >
@@ -22,42 +22,42 @@ async function blogPost(url) {
                               Read-post
                             </button>
                           </div>
-                          </div></a>`
-    })
+                          </div></a>`;
+    });
   } catch (err) {
-    post.innerHTML = displayError('we have found an error')
+    post.innerHTML = displayError("we have found an error");
     function displayError(massage) {
-      return `<div class ="found-error"> ${massage}</div>`
+      return `<div class ="found-error"> ${massage}</div>`;
     }
   }
 
   //------------making slide show
 
-  const carouselSlider = document.querySelector('.carousel-slider')
-  const slider = document.querySelector('.slideshow_items')
-  const rightButton = document.getElementById('right-icon')
-  const leftButton = document.getElementById('left-icon')
+  const carouselSlider = document.querySelector(".carousel-slider");
+  const slider = document.querySelector(".slideshow_items");
+  const rightButton = document.getElementById("right-icon");
+  const leftButton = document.getElementById("left-icon");
 
-  leftButton.addEventListener('click', () => {
-    carouselSlider.scrollLeft -= 150
-    console.log('right')
-  })
+  leftButton.addEventListener("click", () => {
+    carouselSlider.scrollLeft -= 150;
+    console.log("right");
+  });
 
-  rightButton.addEventListener('click', () => {
-    carouselSlider.scrollLeft += 150
-    console.log('left')
-  })
+  rightButton.addEventListener("click", () => {
+    carouselSlider.scrollLeft += 150;
+    console.log("left");
+  });
 }
 
-blogPost(url)
+blogPost(url);
 
 //-----scroll function on the page----
-const scrollTop = document.querySelector('.scroll-top')
-scrollTop.addEventListener('click', () => {
+const scrollTop = document.querySelector(".scroll-top");
+scrollTop.addEventListener("click", () => {
   // window.scrollTo(0, 0)
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: 'smooth',
-  })
-})
+    behavior: "smooth",
+  });
+});

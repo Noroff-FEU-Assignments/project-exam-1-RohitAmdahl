@@ -1,33 +1,33 @@
-const postContainer = document.querySelector('.post-blogs')
-const button = document.querySelector('.load_more')
-const title = document.querySelector('.tittleInfo')
-title.innerHTML = 'Design Blog | Blog'
-const loading = document.querySelector('.loader')
+const postContainer = document.querySelector(".post-blogs");
+const button = document.querySelector(".load_more");
+const title = document.querySelector(".tittleInfo");
+title.innerHTML = "Design Blog | Blog";
+const loading = document.querySelector(".loader");
 
 // const url =
 //   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=' + pageNumber
 // console.log(url)
 
-let pageNumber = 0
+let pageNumber = 0;
 async function blogPost() {
-  pageNumber++
+  pageNumber++;
   const url =
-    'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=' +
+    "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?page=" +
     pageNumber +
-    '&_embed'
-  console.log(url)
+    "&_embed";
+  console.log(url);
 
   // const search =
   //   'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?search=&_embed'
   // console.log(search)
   if (pageNumber === 1) {
-    postContainer.innerHTML = ''
+    postContainer.innerHTML = "";
   }
   try {
-    const response = await fetch(url)
-    const results = await response.json()
+    const response = await fetch(url);
+    const results = await response.json();
     results.forEach(function (post) {
-      const altTText = post._embedded?.['wp:featuredmedia'][0].alt_text
+      const altTText = post._embedded?.["wp:featuredmedia"][0].alt_text;
       postContainer.innerHTML += `<article class="blog-artical">
                                     <h1 class="heading-post" id ="postImage">${post.title.rendered}</h1>
                                     <div class="picture-post">
@@ -45,29 +45,29 @@ async function blogPost() {
                                     <button class="cta-button">
                                        Read more about this post
                                     </button>
-                                  </div> `
-    })
+                                  </div> `;
+    });
   } catch (err) {
-    postContainer.innerHTML = displayError('we have found an error')
+    postContainer.innerHTML = displayError("we have found an error");
     function displayError(massage) {
-      return `<div class ="found-error"> ${massage}</div>`
+      return `<div class ="found-error"> ${massage}</div>`;
     }
   }
 
   button.onclick = () => {
-    button.style.display = 'none'
-  }
+    button.style.display = "none";
+  };
 }
 
-blogPost()
-button.addEventListener('click', blogPost)
+blogPost();
+button.addEventListener("click", blogPost);
 
 //-----scroll function on the page----
-const scrollTop = document.querySelector('.scroll-top')
-scrollTop.addEventListener('click', function () {
+const scrollTop = document.querySelector(".scroll-top");
+scrollTop.addEventListener("click", function () {
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: 'smooth',
-  })
-})
+    behavior: "smooth",
+  });
+});
