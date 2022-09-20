@@ -46,21 +46,19 @@ body {
   text-align: center;
   background-color: var(--category-art);
   font-weight: bold;
-  box-shadow: 1px 1px 20px var(--cta-small-shadow);
+  box-shadow: -15px 0px 0px var(--picture-shadow);
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid;
-  box-shadow: 22px 22px 40px rgba(0, 0, 0, 0.046),
-    38.6px 38.6px 66.2px rgba(0, 0, 0, 0.057),
-    51px 51px 74.8px rgba(0, 0, 0, 0.064), 100px 100px 104px rgba(0, 0, 0, 0.07);
 }
 .scroll-top:hover {
   transition: 0.3s ease-in-out;
-  box-shadow: 10.4px 10.4px 2.2px rgba(0, 0, 0, 0.038),
-    19.7px 19.7px 5.3px rgba(0, 0, 0, 0.058),
-    28.2px 28.2px 10px rgba(0, 0, 0, 0.071),
-    37.2px 37.2px 17.9px rgba(0, 0, 0, 0.078),
-    51px 51px 33.4px rgba(0, 0, 0, 0.081), 100px 100px 80px rgba(0, 0, 0, 0.08);
+  box-shadow: -0.7px -2.6px 14.9px rgba(0, 0, 0, 0.017),
+    0.3px 0.9px 24px rgba(0, 0, 0, 0.032),
+    2.8px 9.8px 30.8px rgba(0, 0, 0, 0.046),
+    7.2px 24.8px 37.6px rgba(0, 0, 0, 0.067),
+    14.1px 48.7px 48px rgba(0, 0, 0, 0.098), 29px 100px 80px rgba(0, 0, 0, 0.13);
+
   background-color: var(--submit-form-button);
   padding: 10px;
 }
