@@ -39,13 +39,13 @@ async function blogPost(url) {
   const leftButton = document.getElementById("left-icon");
 
   leftButton.addEventListener("click", () => {
-    carouselSlider.scrollLeft -= 150;
-    console.log("right");
+    carouselSlider.scrollLeft -= 270;
+    console.log("left");
   });
 
   rightButton.addEventListener("click", () => {
-    carouselSlider.scrollLeft += 150;
-    console.log("left");
+    carouselSlider.scrollLeft += 270;
+    console.log("right");
   });
 }
 

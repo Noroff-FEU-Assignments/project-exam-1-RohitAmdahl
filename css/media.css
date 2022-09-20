@@ -290,4 +290,14 @@
   .load_more {
     width: 56%;
   }
+  #slide {
+    max-width: 269px;
+    height: auto;
+  }
+  .carousel-wrapper {
+    height: 425px;
+  }
+  .title {
+    font-size: 18px;
+  }
 }
