@@ -37,26 +37,22 @@ async function fetchPost() {
     }
   }
 
-  // ----------image model ---------------------
-  const allImgs = document.querySelector(".blog-container figure img");
-  console.log(allImgs);
+  //  ----------image model -0--------------------
   const picture = document.getElementById("image-model");
-  console.log(picture);
+  // console.log(picture);
   const modelPic = document.getElementById("model");
-  console.log(modelPic);
+  // console.log(modelPic);
   const image = document.querySelector(".post-picture");
-  console.log(image);
+  // console.log(image);
   const exit = document.getElementById("exit");
-  console.log(exit);
+  // console.log(exit);
 
   image.onclick = function () {
-    console.log("hello");
     picture.style.display = "block";
     modelPic.src = this.src;
-    console.log(["modelPic.src"]);
+    // console.log(["modelPic.src"]);
   };
   picture.onclick = () => {
-    // exit.classList.add(".remove");
     picture.style.display = "none";
     console.log("close");
   };

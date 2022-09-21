@@ -721,7 +721,7 @@ h2 {
   color: var(--paragraph-heading-font-color);
 }
 
-/* ------------Image model ------------------------ */
+/* ------------Image model -0----------------------- */
 #image-model {
   display: none;
   position: fixed;
@@ -742,9 +742,8 @@ h2 {
   display: block;
 }
 
-.remove {
-  display: none;
-}
+/* ------------Image model -1----------------------- */
+
 /* ------------------------------detail-specific page and  all category --------------------------- */
 .detail-img {
   width: 100%;
@@ -757,6 +756,18 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+.category-heading {
+  font-size: var(--main-heading);
+  font-weight: bold;
 }
 
 .blog-container figure img {
@@ -929,7 +940,7 @@ label {
   color: var(--paragraph-heading-font-color);
 }
 
-/* ----------------art page--- */
+/* ---------------------------------------------------------art page--- */
 .cta-category {
   display: flex;
   justify-content: center;
@@ -990,16 +1001,4 @@ label {
   transition: ease-in 0.1s;
   background-color: var(--submit-form-button);
   color: var(--paragraph-heading-font-color);
-}
-
-.category {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  padding: 20px;
-}
-.category-heading {
-  font-size: var(--main-heading);
-  font-weight: lighter;
 }

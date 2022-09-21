@@ -300,4 +300,8 @@
   .title {
     font-size: 18px;
   }
+  .up-cta {
+    margin: 25px;
+    padding: 0px;
+  }
 }
