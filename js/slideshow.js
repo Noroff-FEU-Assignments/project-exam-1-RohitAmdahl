@@ -8,8 +8,7 @@ async function blogPost(url) {
     console.log(results);
     post.innerHTML = "";
     results.forEach(function (postPic) {
-      post.innerHTML += `
-                          <div class="slideshow" >
+      post.innerHTML += ` <div class="slideshow">
                           <div class ="img">
                           <img src="${postPic.jetpack_featured_media_url}"alt="${postPic._embedded["wp:featuredmedia"]["0"].alt_text}" class="slideshow_img" id ="slide" />
                           <p class="title">
