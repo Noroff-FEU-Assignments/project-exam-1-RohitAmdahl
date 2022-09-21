@@ -847,6 +847,12 @@ h2 {
   top: 203px;
 }
 
+.pin_1 {
+  max-width: 85px;
+  width: 100%;
+  position: absolute;
+}
+
 .layout-design figcaption {
   margin: 0 auto;
   font-size: 35px;
