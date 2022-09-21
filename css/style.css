@@ -834,6 +834,19 @@ h2 {
   color: var(--paragraph-heading-font-color);
 }
 
+.pin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pin_2 {
+  max-width: 85px;
+  width: 100%;
+  position: absolute;
+  top: 203px;
+}
+
 .layout-design figcaption {
   margin: 0 auto;
   font-size: 35px;
