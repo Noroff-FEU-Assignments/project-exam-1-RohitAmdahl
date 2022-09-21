@@ -184,6 +184,12 @@ nav {
   background-image: url(/images/grids.png);
 }
 
+.background-contact {
+  background-image: url(/images/contact-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .aligncenter.size-large.is-resized {
   background-image: url(/images/about-me-background.jpg);
   background-repeat: no-repeat;
