@@ -11,7 +11,7 @@ async function blogPost(url) {
       post.innerHTML += `
                           <div class="slideshow" >
                           <div class ="img">
-                          <img src="${postPic.jetpack_featured_media_url}" alt="" class="slideshow_img" id ="slide" />
+                          <img src="${postPic.jetpack_featured_media_url}"alt="${postPic._embedded["wp:featuredmedia"]["0"].alt_text}" class="slideshow_img" id ="slide" />
                           <p class="title">
                             ${postPic.title.rendered}
                           </p>

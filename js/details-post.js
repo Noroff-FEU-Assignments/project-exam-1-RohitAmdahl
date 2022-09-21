@@ -38,6 +38,8 @@ async function fetchPost() {
   }
 
   // ----------image model ---------------------
+  const allImgs = document.querySelector(".blog-container figure img");
+  console.log(allImgs);
   const picture = document.getElementById("image-model");
   console.log(picture);
   const modelPic = document.getElementById("model");
@@ -53,9 +55,9 @@ async function fetchPost() {
     modelPic.src = this.src;
     console.log(["modelPic.src"]);
   };
-  exit.onclick = () => {
-    picture.classList.remove("exit");
-    // picture.style.display = 'none'
+  picture.onclick = () => {
+    // exit.classList.add(".remove");
+    picture.style.display = "none";
     console.log("close");
   };
 }
