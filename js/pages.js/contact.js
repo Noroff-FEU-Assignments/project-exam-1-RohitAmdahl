@@ -1,5 +1,5 @@
 //---------all input selected here
-const form = document.querySelector("form");
+const form = document.querySelector(".formContact");
 console.log(form);
 const firstName = document.getElementById("firstName");
 console.log(firstName);
