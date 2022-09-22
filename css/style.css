@@ -161,11 +161,11 @@ a {
 .search-container_mobile {
   display: none;
 }
-
+/*
 #search-cta:hover {
   box-shadow: var(--box-shadow-button);
   transition: ease-in 0.4s;
-}
+} */
 
 header {
   display: flex;

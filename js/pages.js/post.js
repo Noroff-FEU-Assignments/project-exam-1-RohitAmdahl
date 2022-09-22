@@ -3,6 +3,8 @@ const button = document.querySelector(".load_more");
 const title = document.querySelector(".tittleInfo");
 title.innerHTML = "Design Blog | Blog";
 const loading = document.querySelector(".loader");
+const searchInput = document.getElementById("search-box");
+console.log(searchInput);
 const search = document.getElementById("search-cta");
 
 let pageNumber = 0;
@@ -56,13 +58,29 @@ async function blogPost() {
     button.style.display = "none";
   };
 
-  search.onclick = () => {
-    const searchInput = document.getElementById("search-box").value;
+  //------
+  search.onsubmit = (event) => {
+    console.log("object");
+    event.preventDefault();
+
+    const searchInput = event.target.search;
     console.log(searchInput);
-    // const newUrl =
-    //   url + "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?search=&_embed";
-    // blogPost(newUrl);
+
+    const searchValue = searchInput.value;
+    console.log(searchValue);
+
+    const correctURLForThisSearch =
+      "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?search=&_embed=true";
+
+    async function searchApi(correctURLForThisSearch) {
+      const response = await fetch(correctURLForThisSearch);
+      const posts = await response.json();
+      // console.log(posts);
+    }
+    searchApi(correctURLForThisSearch);
   };
+
+  //------
 }
 
 blogPost();

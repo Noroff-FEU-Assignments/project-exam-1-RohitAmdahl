@@ -22,19 +22,19 @@
     <link rel="icon" href="data:;base64,=" />
     <!-- Hotjar Tracking Code for my site -->
     <script>
-      ;(function (h, o, t, j, a, r) {
+      (function (h, o, t, j, a, r) {
         h.hj =
           h.hj ||
           function () {
-            ;(h.hj.q = h.hj.q || []).push(arguments)
-          }
-        h._hjSettings = { hjid: 3148080, hjsv: 6 }
-        a = o.getElementsByTagName('head')[0]
-        r = o.createElement('script')
-        r.async = 1
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv
-        a.appendChild(r)
-      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=')
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3148080, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
   </head>
   <body>
@@ -49,31 +49,34 @@
         <a class="links" href="about.html" class="active">About</a>
         <a class="links active" href="blog.html">Blog</a>
         <a class="links" href="contact.html">contact</a>
-        <div class="search-container">
+        <form class="search-container">
           <input
             id="search-box"
             type="search"
             class="search-text"
+            name="search"
             placeholder="search-post"
             aria-label="search post"
           />
           <button id="search-cta">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-        </div>
+        </form>
       </nav>
-      <div class="search-container_mobile">
+      <!-- for mobile -->
+      <form class="search-container_mobile">
         <input
           id="search-box"
           type="search"
           class="search-text"
+          name="search"
           placeholder="search-post"
           aria-label="search post"
         />
         <button id="search-cta">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-      </div>
+      </form>
       <div id="burger-nav">
         <div class="line1"></div>
         <div class="line2"></div>
