@@ -69,7 +69,8 @@ async function blogPost() {
     // const test = heading.getElementsByTagName("heading-post");
     // console.log(test);
     const correctURLForThisSearch =
-      https://rohitkumar.rkamdahl.no/wp-json/wp/v2/search?search=
+      "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/search?search=" +
+      searchInput;
     async function searchApi() {
       try {
         const response = await fetch(correctURLForThisSearch);
