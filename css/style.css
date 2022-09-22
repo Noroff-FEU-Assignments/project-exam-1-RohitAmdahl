@@ -25,7 +25,7 @@ body {
   --cta-small-button-border: #06019d;
   --box-shadow-button: -6px -4px 0px;
   --pic-shadow: -30px -60px 0px;
-  --main-heading: 3em;
+  --main-heading: 3.5em;
   --footer-box-shadow-color: #d9e9f7;
   --but-read-more-text: #010f9f;
   --but-read-more-box-shadow: -13px 10px 0px;
@@ -182,12 +182,6 @@ nav {
 /*----------------------- header finished .main section starts from here ------------------------------ */
 .grids {
   background-image: url(/images/grids.png);
-}
-
-.background-contact {
-  background-image: url(/images/contact-background.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .aligncenter.size-large.is-resized {
@@ -508,17 +502,6 @@ h2 {
   padding: 15px;
   font-weight: bold;
 }
-
-/* .cta-button {
-  background-color: var(--button-background);
-  border: 3px solid var(--cta-small-button-border);
-  cursor: pointer;
-  font-size: 18px;
-  color: var(--paragraph-heading-font-color);
-  box-shadow: var(--but-read-more-box-shadow);
-  padding: 15px;
-  font-weight: bold;
-} */
 
 .cta-button:hover {
   transition: ease-in 0.4s;
@@ -883,6 +866,7 @@ h2 {
 
 .about {
   background-color: var(--text_background-color);
+  background-size: cover;
 }
 
 /* ..----------------------contact form ------------------------ */
@@ -965,7 +949,23 @@ label {
   color: var(--paragraph-heading-font-color);
 }
 
-/* ---------------------------------------------------------art page--- */
+.touch {
+  color: var(--footer-contact-color-shadow);
+  font-style: italic;
+  margin-bottom: 25px;
+}
+.get-in-touch {
+  font-size: 5em;
+  margin-bottom: 40px;
+}
+
+.background-contact {
+  background-image: url(/images/contact-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ---------------------------------------------------------art page---------------- */
 .cta-category {
   display: flex;
   justify-content: center;

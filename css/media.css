@@ -304,4 +304,13 @@
     margin: 25px;
     padding: 0px;
   }
+  .get-in-touch {
+    font-size: 4em;
+  }
+  .form-container {
+    max-width: 400px;
+  }
+  .background-contact {
+    background-size: cover;
+  }
 }

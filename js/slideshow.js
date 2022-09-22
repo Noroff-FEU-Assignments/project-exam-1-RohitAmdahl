@@ -1,7 +1,7 @@
 const url = "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed";
 console.log(url);
 const post = document.querySelector(".slideshow_items");
-async function blogPost(url) {
+async function blogPost() {
   try {
     const response = await fetch(url);
     const results = await response.json();
@@ -48,7 +48,7 @@ async function blogPost(url) {
   });
 }
 
-blogPost(url);
+blogPost();
 
 //-----scroll function on the page----
 const scrollTop = document.querySelector(".scroll-top");
