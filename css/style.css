@@ -275,6 +275,8 @@ h2 {
   background-color: var(--text_background-color);
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 250px 80px;
+  border: 2px solid var(--category-drawing-text);
 }
 
 .picture {
@@ -387,6 +389,7 @@ h2 {
   padding: 25px;
   margin-top: 40px;
   width: 1200px;
+  border-radius: 80px 80px;
 }
 
 .content {
@@ -414,6 +417,7 @@ h2 {
   overflow-x: auto;
   scroll-behavior: smooth;
   height: 550px;
+  border-radius: 80px 80px;
 }
 
 .carousel-slider {
@@ -680,6 +684,8 @@ h2 {
   padding: 50px;
   position: relative;
   top: -31px;
+  border-radius: 250px 80px;
+  border: 2px solid var(--footer-contact-color-shadow);
 }
 .blog-container {
   display: flex;
@@ -831,6 +837,8 @@ h2 {
   margin-top: 25px;
   background: var(--text_background-color);
   color: var(--paragraph-heading-font-color);
+  border-radius: 250px 80px;
+  border: 2px solid var(--category-drawing-text);
 }
 
 .pin {
@@ -921,6 +929,7 @@ label {
   padding: 25px;
   box-shadow: var(--form-form-box-shadow);
   color: var(--form-box-shadow-color);
+  border: 2px solid var(--category-drawing-text);
 }
 
 #firstName,

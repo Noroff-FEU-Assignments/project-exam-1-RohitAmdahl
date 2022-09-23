@@ -44,8 +44,10 @@ async function fetchPost() {
   // console.log(modelPic);
   const image = document.querySelector(".post-picture");
   // console.log(image);
-  const exit = document.getElementById("exit");
-  // console.log(exit);
+  const restPicture = document.querySelectorAll(".blog-container figure img");
+  console.log(restPicture);
+
+  for (i = 0; i < images.length; i++) {}
 
   image.onclick = function () {
     picture.style.display = "block";
@@ -56,5 +58,7 @@ async function fetchPost() {
     picture.style.display = "none";
     console.log("close");
   };
+
+  //-----------------------
 }
 fetchPost();
