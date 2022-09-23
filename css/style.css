@@ -37,6 +37,7 @@ body {
   --category-3drawing: #06019d;
   --category-drawing-text: #ffd484;
   --category-text: #010f9f;
+  --backgtound-search: rgb(5, 125, 231);
 }
 
 .scroll-top {
@@ -275,6 +276,7 @@ h2 {
   background-color: var(--text_background-color);
   padding-top: 30px;
   padding-bottom: 30px;
+  margin: 20px 0px;
   border-radius: 250px 80px;
   border: 2px solid var(--category-drawing-text);
 }
@@ -347,9 +349,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-
   font-weight: bold;
-  margin: 0 auto;
+  margin: 25px;
 }
 
 .wrap_second {
@@ -387,7 +388,8 @@ h2 {
 .text-design {
   background-color: var(--text_background-color);
   padding: 25px;
-  margin-top: 40px;
+  margin-top: 60px;
+  margin-bottom: 20px;
   width: 1200px;
   border-radius: 80px 80px;
   border: 2px solid var(--category-drawing-text);
@@ -490,6 +492,7 @@ h2 {
 
 .latest-blog {
   padding: 30px 0px;
+  margin: 25px 0px;
 }
 
 .cta-read_more {
@@ -653,7 +656,10 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 3em;
-  background: rgb(5, 125, 231);
+  font-weight: bold;
+  background: var(--backgtound-search);
+  border-radius: 250px 80px;
+  border: 2px solid var(--footer-contact-color-shadow);
 }
 
 .picture-post {
