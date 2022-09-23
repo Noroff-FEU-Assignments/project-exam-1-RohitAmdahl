@@ -38,22 +38,23 @@ async function fetchPost() {
   }
 
   //  ----------image model -0--------------------
-  const picture = document.getElementById("image-model");
-  // console.log(picture);
-  const modelPic = document.getElementById("model");
-  // console.log(modelPic);
-  const image = document.querySelector(".post-picture");
-  // console.log(image);
+  const picture = document.getElementById("image-model"); //---div wrapper
+
+  const modelPic = document.getElementById("model"); //...img tag
+
+  const image = document.querySelector(".post-picture"); //----api container fetch result
+
   const restPicture = document.querySelectorAll(".blog-container figure img");
   console.log(restPicture);
 
-  for (i = 0; i < images.length; i++) {}
+  // for (i = 0; i < images.length; i++) {}
 
   image.onclick = function () {
     picture.style.display = "block";
     modelPic.src = this.src;
     // console.log(["modelPic.src"]);
   };
+
   picture.onclick = () => {
     picture.style.display = "none";
     console.log("close");
