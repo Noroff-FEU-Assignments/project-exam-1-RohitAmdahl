@@ -287,6 +287,11 @@
   .heading-post {
     font-size: 44px;
   }
+  .picture {
+    max-width: 325px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
 
   .number {
     padding: 0;
