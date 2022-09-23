@@ -643,6 +643,14 @@ h2 {
   align-items: center;
 }
 /* ----------------------------------------------blog----page----------------------  */
+.search-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  background: rgb(5, 125, 231);
+}
+
 .picture-post {
   display: flex;
   justify-content: center;

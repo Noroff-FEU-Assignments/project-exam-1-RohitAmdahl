@@ -68,6 +68,8 @@ scrollTop.addEventListener("click", function () {
 });
 
 //------
+const searchText = document.querySelector(".search-result");
+console.log(searchText);
 
 searchButton.onclick = () => {
   const searchInput = document.querySelector("#search-box").value.toUpperCase();
@@ -79,8 +81,9 @@ searchButton.onclick = () => {
   async function searchApi() {
     try {
       const response = await fetch(correctURLForThisSearch);
-      const posts = await response.json();
-      console.log(posts);
+      const searchResult = await response.json();
+      console.log(searchResult);
+      searchText.innerHTML += ` <p class="search-result-text">${searchResult[0].title}</p>`;
     } catch (error) {
       console.log(error);
     }
