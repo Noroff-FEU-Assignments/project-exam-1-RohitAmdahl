@@ -607,7 +607,7 @@ h2 {
 .address,
 .number,
 .icon-text {
-  padding-left: 15px;
+  padding-left: 5px;
 }
 
 .number {
@@ -848,18 +848,6 @@ h2 {
   border: 2px solid var(--category-drawing-text);
 }
 
-.pin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pin_2 {
-  max-width: 85px;
-  width: 100%;
-  position: absolute;
-  top: 203px;
-}
 
 .pin_1 {
   max-width: 85px;
