@@ -2,8 +2,17 @@
   body {
     overflow-x: hidden;
   }
+
   header {
     flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .arrow-footer {
+    display: none;
   }
 }
 
