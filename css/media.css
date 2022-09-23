@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   body {
     overflow-x: hidden;
   }
@@ -86,6 +86,10 @@
     width: 100%;
     max-width: 450px;
     height: 350px;
+  }
+
+  #search-box {
+    margin-top: 10px;
   }
 
   .post-picture {

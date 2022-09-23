@@ -15,10 +15,6 @@ async function blogPost() {
     "&_embed";
   console.log(url);
 
-  // const correctURLForThisSearch =
-  //   "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed=true&search=" +
-  //   `valueFromInput`;
-
   if (pageNumber === 1) {
     postContainer.innerHTML = "";
   }
@@ -56,32 +52,6 @@ async function blogPost() {
   button.onclick = () => {
     button.style.display = "none";
   };
-
-  //------
-
-  searchButton.onclick = () => {
-    const searchInput = document
-      .querySelector("#search-box")
-      .value.toUpperCase();
-    console.log(searchInput);
-    // const heading = document.querySelector(".blog-artical");
-    // console.log(heading);
-    // const test = heading.getElementsByTagName("heading-post");
-    // console.log(test);
-    const correctURLForThisSearch =
-      "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/search?search=" +
-      searchInput;
-    async function searchApi() {
-      try {
-        const response = await fetch(correctURLForThisSearch);
-        const posts = await response.json();
-        console.log(posts);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-    searchApi();
-  };
 }
 
 blogPost();
@@ -96,3 +66,26 @@ scrollTop.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+//------
+
+searchButton.onclick = () => {
+  const searchInput = document.querySelector("#search-box").value.toUpperCase();
+  console.log(searchInput);
+  const correctURLForThisSearch =
+    "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/search?search=" + searchInput;
+  console.log(correctURLForThisSearch);
+
+  async function searchApi() {
+    try {
+      const response = await fetch(correctURLForThisSearch);
+      const posts = await response.json();
+      console.log(posts);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  searchApi();
+};
+
+//----------------

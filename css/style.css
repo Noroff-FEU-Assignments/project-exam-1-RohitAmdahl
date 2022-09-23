@@ -145,7 +145,7 @@ a {
 }
 
 #search-cta {
-  padding: 5px 13px;
+  padding: 10px 15px;
   background: var(--button-background);
   border: 2px solid var(--cta-small-button-border);
   cursor: pointer;
@@ -154,8 +154,7 @@ a {
 
 #search-box {
   border: 2px solid var(--cta-small-button-border);
-  padding: 4px;
-  margin-left: 12px;
+  padding: 10px 30px;
 }
 
 .search-container_mobile {
@@ -171,12 +170,15 @@ header {
   display: flex;
   justify-content: space-around;
   background-color: var(--heading-background-color);
+  padding: 15px;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-sizing: border-box;
+  width: 750px;
 }
 
 /*----------------------- header finished .main section starts from here ------------------------------ */
