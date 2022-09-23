@@ -57,8 +57,11 @@
 
   .nav-active {
     transform: translateX(0%);
-    width: 50%;
+    width: 100%;
     z-index: 1000;
+    max-width: 350px;
+    margin: 0 auto;
+    overflow: hidden;
   }
 
   a {
