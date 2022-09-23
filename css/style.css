@@ -659,7 +659,6 @@ h2 {
   font-weight: bold;
   background: var(--backgtound-search);
   border-radius: 250px 80px;
-  border: 2px solid var(--footer-contact-color-shadow);
 }
 
 .picture-post {
@@ -691,8 +690,9 @@ h2 {
   padding: 50px;
   position: relative;
   top: -31px;
-  border-radius: 250px 80px;
-  border: 2px solid var(--footer-contact-color-shadow);
+  border-radius: 80px 80px;
+  border: 2px solid var(--category-drawing-text);
+  /* border: 2px solid var(--footer-contact-color-shadow); */
 }
 .blog-container {
   display: flex;
