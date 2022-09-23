@@ -1,19 +1,19 @@
-const url = 'https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?categories=17'
-console.log(url)
-const postRender = document.querySelector('.post-Container')
-const title = document.querySelector('.tittleInfo')
-const loading = document.querySelector('.loader')
-console.log(postRender)
+const url = "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?categories=17";
+console.log(url);
+const postRender = document.querySelector(".post-Container");
+const title = document.querySelector(".tittleInfo");
+const loading = document.querySelector(".loader");
+console.log(postRender);
 
 async function getRenderCategory(url) {
   try {
-    const response = await fetch(url)
-    const renders = await response.json()
-    console.log(renders)
+    const response = await fetch(url);
+    const renders = await response.json();
+    console.log(renders);
 
-    postRender.innerHTML = ' '
+    postRender.innerHTML = " ";
     renders.forEach(function (getArt) {
-      title.innerHTML = `Art Blog | ${getArt.title.rendered}`
+      title.innerHTML = `Art Blog | ${getArt.title.rendered}`;
       postRender.innerHTML += `<a href="/art.html?id=${getArt.id}"><article class="blog-artical">
                                     <h1 class="heading-post">${getArt.title.rendered}</h1>
                                     <div class="picture-post">
@@ -31,14 +31,26 @@ async function getRenderCategory(url) {
                                     <button class="cta-button">
                                        Read more about this post
                                     </button>
-                                  </div> </a>`
-    })
+                                  </div> </a>`;
+    });
   } catch (error) {
-    console.log(error)
-    postRender.innerHTML = displayError('we have found an error')
+    console.log(error);
+    postRender.innerHTML = displayError("we have found an error");
     function displayError(massage) {
-      return `<div class ="found-error"> ${massage}</div>`
+      return `<div class ="found-error"> ${massage}</div>`;
     }
   }
 }
-getRenderCategory(url)
+getRenderCategory(url);
+
+//-----scroll function on the page----
+const scrollTop = document.querySelector(".scroll-top");
+scrollTop.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+//------

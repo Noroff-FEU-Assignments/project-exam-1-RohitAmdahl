@@ -4,7 +4,6 @@ const title = document.querySelector(".tittleInfo");
 title.innerHTML = "Design Blog | Blog";
 const loading = document.querySelector(".loader");
 const searchButton = document.getElementById("search-cta");
-console.log(searchButton);
 
 let pageNumber = 0;
 async function blogPost() {
@@ -83,7 +82,7 @@ searchButton.onclick = () => {
       const response = await fetch(correctURLForThisSearch);
       const searchResult = await response.json();
       console.log(searchResult);
-      searchText.innerHTML += ` <p class="search-result-text">${searchResult[0].title}</p>`;
+      searchText.innerHTML += `  <p class="search-result-text">${searchResult[0].title}</p>`;
     } catch (error) {
       console.log(error);
     }

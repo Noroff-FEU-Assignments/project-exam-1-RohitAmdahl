@@ -41,3 +41,15 @@ async function getRenderCategory(url) {
   }
 }
 getRenderCategory(url);
+
+//-----scroll function on the page----
+const scrollTop = document.querySelector(".scroll-top");
+scrollTop.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+//------
