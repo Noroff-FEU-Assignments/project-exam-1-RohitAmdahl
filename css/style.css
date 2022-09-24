@@ -649,6 +649,7 @@ h2 {
   max-width: 900px;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 /* ----------------------------------------------blog----page----------------------  */
 .search-result {
