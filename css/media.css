@@ -134,7 +134,7 @@
   }
 
   .links {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   nav {
@@ -527,47 +527,65 @@
     padding: 0;
     width: 300px;
   }
+
   .icon-text {
     padding: 0;
   }
+
   .media {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .tea {
     padding: 0;
   }
+
   .post-picture {
     box-shadow: none;
   }
+
   .blog-container figure img {
     height: 260px;
   }
+
   .load_more {
     width: 56%;
   }
+
   #slide {
     max-width: 269px;
     height: auto;
   }
+
   .carousel-wrapper {
     height: 425px;
   }
+
   .title {
     font-size: 18px;
   }
+
   .up-cta {
     margin: 25px;
     padding: 0px;
   }
+
   .get-in-touch {
     font-size: 4em;
   }
+
   .form-container {
     max-width: 400px;
   }
+
   .background-contact {
     background-size: cover;
+  }
+
+  .background-color {
+    max-width: 340px;
+    margin: 0 auto;
   }
 }
