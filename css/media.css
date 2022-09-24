@@ -14,6 +14,45 @@
   .arrow-footer {
     display: none;
   }
+  .wrap_second {
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap_first {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .carousel-slider {
+    max-width: 650px;
+  }
+  .background-color {
+    max-width: 533px;
+  }
+  .has-medium-font-size {
+    max-width: 850px;
+    border-radius: 398px 80px;
+  }
+  .text-design {
+    margin-top: 25px;
+  }
+  .text-rightside {
+    margin-top: 58px;
+  }
+  .text-design {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 360px 115px;
+  }
+  .content {
+    text-align: center;
+    max-width: 570px;
+  }
 }
 
 @media screen and (max-width: 768px) {
