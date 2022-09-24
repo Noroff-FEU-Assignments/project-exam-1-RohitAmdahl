@@ -37,7 +37,7 @@ body {
   --category-3drawing: #06019d;
   --category-drawing-text: #ffd484;
   --category-text: #010f9f;
-  --backgtound-search: rgb(5, 125, 231);
+  --search: rgb(5, 125, 231);
 }
 
 .scroll-top {
