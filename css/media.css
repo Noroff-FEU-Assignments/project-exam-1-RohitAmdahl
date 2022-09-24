@@ -304,10 +304,11 @@
     border: 2px solid var(--search);
   }
 
-  /* .wrap_second,
-  .wrap_first {
-    flex-direction: column;
-  } */
+  .thin-arrow {
+    transform: rotate(90deg);
+    max-width: 46px;
+    margin: 10px;
+  }
   .wrap_second {
     flex-direction: column;
     justify-content: center;
