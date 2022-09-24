@@ -64,6 +64,60 @@
   .post-summary {
     border-radius: 360px 115px;
   }
+  .architectural_blog {
+    max-width: 750px;
+  }
+  .picture,
+  .picture-drawing {
+    max-width: 250px;
+    padding: 0;
+  }
+  .quote {
+    max-width: 750px;
+  }
+  .get-in-touch {
+    margin-top: 25px;
+    font-size: 3.5em;
+  }
+  .art,
+  .drawing,
+  .d_render {
+    font-size: 1.2em;
+  }
+  .content {
+    font-size: 1.2em;
+  }
+  .load_more {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .cta-big {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .wrapper-box {
+    flex-direction: column;
+  }
+  .search-container_search_page {
+    flex-direction: column;
+    max-width: 720px;
+    flex-direction: column;
+  }
+  .category-heading {
+    text-align: center;
+  }
+  .cta-links-1 {
+    padding: 8px;
+    max-width: 152px;
+  }
+  .cta-links-1 {
+    padding: 8px;
+    max-width: 175px;
+  }
+  .cta-links-0 {
+    padding: 8px;
+    max-width: 175px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -77,6 +131,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .links {
+    font-size: 1.5em;
   }
 
   nav {
@@ -235,13 +293,33 @@
     box-shadow: -27px -51px 0px var(--footer-box-shadow-color);
   }
 
-  .search-container_search_page {
-    flex-direction: column;
-    max-width: 720px;
-  }
   #search-box {
-    padding: 10px;
     border: 2px solid var(--search);
+  }
+
+  .wrap_second,
+  .wrap_first {
+    flex-direction: column;
+  }
+
+  .arrow-category {
+    display: none;
+  }
+
+  .picture,
+  .picture-drawing {
+    max-width: 250px;
+  }
+
+  .drawing,
+  .art,
+  .d_render {
+    font-size: 29px;
+    border-bottom-width: 0px;
+  }
+
+  .carousel-slider {
+    max-width: 323px;
   }
 
   /* .search-container_mobile {

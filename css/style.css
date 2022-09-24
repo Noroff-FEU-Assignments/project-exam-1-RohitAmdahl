@@ -153,10 +153,10 @@ a {
   margin-left: 4px;
 }
 
-/* #search-box {
+#search-box {
   border: 2px solid var(--cta-small-button-border);
   padding: 10px 30px;
-} */
+}
 
 #search-cta:hover {
   background-color: var(--submit-form-button);
