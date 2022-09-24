@@ -153,14 +153,10 @@ a {
   margin-left: 4px;
 }
 
-#search-box {
+/* #search-box {
   border: 2px solid var(--cta-small-button-border);
   padding: 10px 30px;
-}
-
-.search-container_mobile {
-  display: none;
-}
+} */
 
 #search-cta:hover {
   background-color: var(--submit-form-button);
@@ -981,7 +977,8 @@ label {
 .background-contact {
   background-image: url(/images/contact-background.png);
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
+  background-size: cover;
 }
 
 /* ---------------------------------------------------------art page---------------- */
