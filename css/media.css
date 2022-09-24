@@ -70,38 +70,17 @@
   body {
     overflow-x: hidden;
   }
-
-  header {
-    display: grid;
-    padding-bottom: 25px;
+  .open {
+    position: absolute;
   }
-
-  .search-container_mobile {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  }
-
   .blog_logo {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .search-container_mobile {
-    display: block;
-  }
-
-  /* .search-container {
-    display: none;
-  } */
-
-  .open {
-    position: absolute;
-  }
-
   nav {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     padding: 4rem;
     position: absolute;
     width: 100%;
@@ -128,9 +107,13 @@
   }
 
   a {
-    font-size: 18px;
+    font-size: 25px;
   }
 
+  header {
+    display: grid;
+    padding-bottom: 25px;
+  }
   #burger-nav {
     display: block;
     position: absolute;
@@ -173,11 +156,50 @@
     height: 350px;
   }
 
-  #search-box {
-    margin-top: 10px;
+  .quote {
+    max-width: 670px;
   }
 
-  .post-picture {
+  .architectural_blog {
+    max-width: 530px;
+    font-size: 0.8em;
+  }
+
+  .picture,
+  .picture-drawing {
+    max-width: 260px;
+    padding: 0;
+  }
+
+  .art,
+  .drawing,
+  .d_render {
+    font-size: 1em;
+  }
+
+  .wrappercontainer {
+    max-width: 645px;
+  }
+
+  /* .search-container_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  } */
+
+  /* .search-container_mobile {
+    display: block;
+  } */
+
+  /* .search-container {
+    display: none;
+  } */
+
+  /* #search-box {
+    margin-top: 10px;
+  } */
+
+  /* .post-picture {
     max-width: 600px;
     margin: 0 auto;
   }
@@ -192,9 +214,9 @@
   .blog-container figcaption {
     font-size: 25px;
     padding: 15px;
-  }
+  } */
 
-  .blockquote_text {
+  /* .blockquote_text {
     text-align: center;
   }
 
@@ -277,7 +299,7 @@
   .carousel-slider {
     width: 80%;
     margin: 0 auto;
-  }
+  } */
 }
 
 @media screen and (max-width: 420px) {
