@@ -17,6 +17,11 @@ searchButton.onclick = () => {
       const response = await fetch(correctURLForThisSearch);
       const searchResult = await response.json();
       console.log(searchResult);
+      searchResult.forEach((search) => {
+        searchText.innerHTML += `  <p class="search-result-text">${
+          ("result", search.title)
+        }</p>`;
+      });
       // searchText.innerHTML += `  <p class="search-result-text">${searchResult[0].title}</p>`;
     } catch (error) {
       console.log(error);

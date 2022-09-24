@@ -652,11 +652,12 @@ h2 {
 /* ----------------------------------------------blog----page----------------------  */
 .search-result {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 3em;
   font-weight: bold;
-  background: var(--backgtound-search);
+  background: var(--search);
   border-radius: 250px 80px;
 }
 
@@ -1066,7 +1067,7 @@ label {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  height: 40vh;
+  height: 30vh;
   padding: 10px;
 }
 .search-text {
