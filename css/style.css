@@ -38,6 +38,7 @@ body {
   --category-drawing-text: #ffd484;
   --category-text: #010f9f;
   --search: rgb(5, 125, 231);
+  --note-text-color: rgb(87, 55, 55);
 }
 
 .scroll-top {
@@ -1073,4 +1074,13 @@ label {
 .search-text {
   max-width: 800px;
   width: 100%;
+}
+
+.note-text {
+  color: var(--note-text-color);
+  font-size: 25px;
+  font-weight: bold;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px;
 }
