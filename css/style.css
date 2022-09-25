@@ -980,8 +980,7 @@ label {
 .background-contact {
   background-image: url(/images/contact-background.png);
   background-repeat: no-repeat;
-  /* background-position: center; */
-  background-size: cover;
+  background-position: center;
 }
 
 /* ---------------------------------------------------------art page---------------- */
