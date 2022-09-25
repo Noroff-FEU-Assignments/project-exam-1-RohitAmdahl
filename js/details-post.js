@@ -39,26 +39,41 @@ async function fetchPost() {
 
   //  ----------image model -0--------------------
   const picture = document.getElementById("image-model"); //---div wrapper
+  // const pictureModel = document.getElementById("img-model"); //---div wrapper-2
 
   const modelPic = document.getElementById("model"); //...img tag
+  // const modelPics = document.getElementById("model-1"); //...img tag-2
 
   const image = document.querySelector(".post-picture"); //----api container fetch result
+
+  const detailImage = document.querySelector(".blog-container");
+  console.log(detailImage); //----api container fetch result-details
 
   const restPicture = document.querySelectorAll(".blog-container figure img");
   console.log(restPicture);
 
-  // for (i = 0; i < images.length; i++) {}
-
   image.onclick = function () {
     picture.style.display = "block";
     modelPic.src = this.src;
-    // console.log(["modelPic.src"]);
+    console.log(["modelPic.src"]);
   };
 
   picture.onclick = () => {
     picture.style.display = "none";
     console.log("close");
   };
+  //----------------
+  // trying to find out of 2 model
+  // detailImage.onclick = function () {
+  //   picture.style.display = "grid";
+  //   modelPics.src = this.src;
+  //   console.log([" modelPics.src"]);
+  // };
+
+  // pictureModel.onclick = () => {
+  //   picture.style.display = "none";
+  //   console.log("close");
+  // };
 
   //-----------------------
 }
