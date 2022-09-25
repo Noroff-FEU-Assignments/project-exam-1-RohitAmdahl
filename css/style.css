@@ -284,23 +284,21 @@ h2 {
 .picture {
   width: 100%;
   max-width: 380px;
-  object-fit: cover;
-  height: max-content;
+  /* object-fit: cover;
+  height: max-content; */
   padding: 0%;
   box-shadow: -18px -17px;
   color: var(--picture-shadow);
-  padding: 20px;
-  border: 1px solid;
-  height: auto;
+  padding: 10px;
+  border: 5px solid;
 }
 
 .picture-drawing {
   width: 100%;
   margin-bottom: 16px;
   max-width: 350px;
-  padding: 30px;
-  border: 1px solid;
-
+  padding: 10px;
+  border: 5px solid;
   box-shadow: -30px 0px;
 }
 
