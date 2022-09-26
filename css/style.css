@@ -287,8 +287,6 @@ h3 {
 .picture {
   width: 100%;
   max-width: 380px;
-  /* object-fit: cover;
-  height: max-content; */
   padding: 0%;
   box-shadow: -18px -17px;
   color: var(--picture-shadow);
@@ -705,6 +703,7 @@ ul {
   align-items: center;
   padding: 20px;
 }
+
 /* ----------------------------------------------blog----page----------------------  */
 .search-result {
   display: flex;
@@ -798,6 +797,21 @@ ul {
   transition: ease-in 0.5s;
   background-color: var(--category-art);
   box-shadow: 0px 25px 0px var(--picture-shadow);
+}
+.pause-play,
+.play-pause {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--picture-shadow);
+  background: #f5f5f5;
+  font-size: 20px;
+  margin-right: 25px;
+  color: var(--footer-text);
+}
+
+.pause-play,
+.play-pause .active:hover {
+  color: var(--error);
 }
 
 /* ------------Image model -0----------------------- */

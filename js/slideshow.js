@@ -38,12 +38,12 @@ async function blogPost() {
   const leftButton = document.getElementById("left-icon");
 
   leftButton.addEventListener("click", () => {
-    carouselSlider.scrollLeft -= 270;
+    carouselSlider.scrollLeft -= 370;
     console.log("left");
   });
 
   rightButton.addEventListener("click", () => {
-    carouselSlider.scrollLeft += 270;
+    carouselSlider.scrollLeft += 370;
     console.log("right");
   });
 }
@@ -61,4 +61,19 @@ scrollTop.addEventListener("click", () => {
   });
 });
 
-//....
+//....video player---
+const videoPlayer = document.querySelector(".animation");
+console.log(videoPlayer);
+const video = videoPlayer.querySelector(".video");
+console.log(video);
+const button = videoPlayer.querySelector(".play-pause");
+const buttonPaused = videoPlayer.querySelector(".pause-play");
+console.log(button);
+console.log(button);
+
+button.onclick = () => {
+  video.play();
+};
+buttonPaused.onclick = () => {
+  video.pause();
+};
