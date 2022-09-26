@@ -410,6 +410,10 @@ h3 {
   border-radius: 260px 80px;
   border: 2px solid var(--category-drawing-text);
 }
+.animationText {
+  color: var(--paragraph-heading-font-color);
+  font-size: 22px;
+}
 
 .content {
   text-align: left;
