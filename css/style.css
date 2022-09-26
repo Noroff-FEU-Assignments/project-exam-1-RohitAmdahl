@@ -192,7 +192,8 @@ nav {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0 auto;
   max-width: 1200px;
   text-align: center;
@@ -320,7 +321,6 @@ h2 {
     28.2px 28.2px 10px rgba(0, 0, 0, 0.071),
     37.2px 37.2px 17.9px rgba(0, 0, 0, 0.078),
     51px 51px 33.4px rgba(0, 0, 0, 0.081), 100px 100px 80px rgba(0, 0, 0, 0.08);
-
   transition: box-shadow 0.2s ease-in-out;
 }
 
@@ -405,6 +405,29 @@ h2 {
   font-weight: bold;
   color: var(--paragraph-heading-font-color);
 }
+
+.animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.video {
+  width: 100%;
+  padding: 15px;
+}
+
+.button button {
+  border: 3px solid var(--footer-contact-color);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #5a0909;
+}
+
 /* ---------------------carousel--------------  */
 .carousel-wrapper {
   padding: 0px 10px;
