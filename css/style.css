@@ -810,6 +810,7 @@ h2 {
   margin-top: 10px;
   margin-bottom: 40px;
   padding: 20px;
+  background-color: var(--category-drawing-text);
 }
 .category-heading {
   font-size: var(--main-heading);
@@ -1021,6 +1022,13 @@ label {
   align-items: baseline;
   padding: 10px;
   width: initial;
+  background-color: var(--category-drawing-text);
+}
+
+.cta-category:hover {
+  transition: ease-in 0.5s;
+  background-color: var(--category-art);
+  box-shadow: 0px 25px 0px var(--picture-shadow);
 }
 
 .cta-links-0 {
@@ -1067,14 +1075,14 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: var(--picture-shadow) 3px solid;
+  border: var(--but-read-more-text) 3px solid;
   box-shadow: var(--but-read-more-box-shadow);
 }
 
 .cta-links-2:hover {
   transition: ease-in 0.1s;
-  background-color: var(--submit-form-button);
-  color: var(--paragraph-heading-font-color);
+  background-color: var(--category-art);
+  color: var(--category-text);
 }
 
 /*-------------- search page------------------ */
