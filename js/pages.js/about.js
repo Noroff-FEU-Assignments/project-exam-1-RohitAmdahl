@@ -13,7 +13,7 @@ async function fetchPage() {
     const results = await response.json();
     title.innerHTML = "Design blog | About me";
     aboutPage.innerHTML = "";
-    aboutPage.innerHTML += `<div class="blog-artical  grids">
+    aboutPage.innerHTML += `<div class="blog-artical">
                             <div class="about">
                             <h1 class="heading-post">${results.title.rendered}</h1>
                             </div>

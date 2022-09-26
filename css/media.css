@@ -414,9 +414,9 @@
   .icon-text {
     padding: 0;
   }
-  .thin-arrow {
+  /* .thin-arrow {
     display: none;
-  }
+  } */
   .footer-logo {
     display: block;
   }
@@ -574,5 +574,8 @@
   .footer-box {
     display: contents;
     width: inherit;
+  }
+  .tea {
+    font-size: 19px;
   }
 }
