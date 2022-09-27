@@ -622,6 +622,10 @@ ul {
   left: 38px;
 }
 
+.contact:hover {
+  color: var(--footer-text);
+}
+
 .arrow-footer,
 .footer-logo {
   width: 100%;
@@ -662,7 +666,7 @@ ul {
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid black;
+  border: 10px solid var(--footer-box-shadow-color);
   box-shadow: -31px 39px 2px var(--footer-box-shadow-color);
   width: 800px;
   position: inherit;
