@@ -305,9 +305,8 @@
   }
 
   .thin-arrow {
-    transform: rotate(90deg);
-    max-width: 46px;
-    margin: 10px;
+    max-width: 90px;
+    margin: 5px;
   }
   .wrap_second {
     flex-direction: column;
@@ -557,6 +556,12 @@
   .footer-box {
     width: inherit;
   }
+  .read-post {
+    font-size: 15px;
+  }
+  .contact {
+    font-size: inherit;
+  }
 }
 
 @media screen and (max-width: 300px) {
@@ -584,5 +589,17 @@
   }
   .tea {
     font-size: 19px;
+  }
+  h3 {
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contact {
+    font-size: inherit;
+  }
+  .read-post {
+    font-size: 14px;
   }
 }

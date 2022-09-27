@@ -631,7 +631,9 @@ ul {
 
 .thin-arrow {
   width: 100%;
-  max-width: 60px;
+  max-width: 120px;
+  transform: rotate(90deg);
+  padding: 20px;
 }
 
 .arrow-footer {
@@ -652,7 +654,7 @@ ul {
   align-items: center;
   background-color: var(--text_background-color);
   padding: 40px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-top: 30px;
 }
 
@@ -683,6 +685,10 @@ ul {
 .number {
   width: 440px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
 }
 
 .tea {
