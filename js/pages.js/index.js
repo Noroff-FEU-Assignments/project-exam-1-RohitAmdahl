@@ -1,11 +1,9 @@
 const url = "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?_embed";
-console.log(url);
 const post = document.querySelector(".slideshow_items");
 async function blogPost() {
   try {
     const response = await fetch(url);
     const results = await response.json();
-    console.log(results);
     post.innerHTML = "";
     results.forEach(function (postPic) {
       post.innerHTML += ` <div class="slideshow">
