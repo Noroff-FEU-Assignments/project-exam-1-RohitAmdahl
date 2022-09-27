@@ -39,12 +39,10 @@ async function blogPost() {
 
   leftButton.addEventListener("click", () => {
     carouselSlider.scrollLeft -= 370;
-    console.log("left");
   });
 
   rightButton.addEventListener("click", () => {
     carouselSlider.scrollLeft += 370;
-    console.log("right");
   });
 }
 
@@ -53,7 +51,6 @@ blogPost();
 //-----scroll function on the page----
 const scrollTop = document.querySelector(".scroll-top");
 scrollTop.addEventListener("click", () => {
-  // window.scrollTo(0, 0)
   window.scrollTo({
     top: 0,
     left: 0,

@@ -573,15 +573,20 @@ ul {
 
 #right-icon,
 #left-icon {
-  font-size: 20px;
+  font-size: 25px;
   color: var(--category-text);
   background: var(--button-background);
   padding: 10px;
-  border-radius: 50%;
-  border: 2px solid var(--picture-shadow);
+  border: 5px solid var(--picture-shadow);
   margin-left: 20px;
   margin-right: 20px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
 }
 
 .arrow-icons {
