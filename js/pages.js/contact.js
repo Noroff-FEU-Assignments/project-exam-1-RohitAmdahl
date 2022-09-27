@@ -1,14 +1,14 @@
 //---------all input selected here
 const form = document.querySelector(".formContact");
-console.log(form);
+// console.log(form);
 const firstName = document.getElementById("firstName");
-console.log(firstName);
+// console.log(firstName);
 const subject = document.getElementById("subject");
-console.log(subject);
+// console.log(subject);
 const email = document.getElementById("email");
-console.log(email);
+// console.log(email);
 const message = document.getElementById("message");
-console.log(message);
+// console.log(message);
 
 //---------all the error down here
 const firstNameError = document.querySelector(".nameError");
@@ -46,8 +46,6 @@ function validationForm() {
   } else {
     messageError.style.display = "block";
   }
-
-  console.log("hello");
 }
 
 form.addEventListener("submit", validationForm);
