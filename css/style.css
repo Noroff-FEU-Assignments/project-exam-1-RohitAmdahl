@@ -574,6 +574,9 @@ ul {
   box-shadow: var(--but-read-more-box-shadow);
   padding: 15px;
   font-weight: bold;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
 
 .cta-button:hover {
