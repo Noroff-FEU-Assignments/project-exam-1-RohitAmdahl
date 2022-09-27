@@ -63,13 +63,9 @@ scrollTop.addEventListener("click", () => {
 
 //....video player---
 const videoPlayer = document.querySelector(".animation");
-console.log(videoPlayer);
 const video = videoPlayer.querySelector(".video");
-console.log(video);
 const button = videoPlayer.querySelector(".play-pause");
 const buttonPaused = videoPlayer.querySelector(".pause-play");
-console.log(button);
-console.log(button);
 
 button.onclick = () => {
   video.play();
