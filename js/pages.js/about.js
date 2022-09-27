@@ -1,11 +1,9 @@
 //-------------------About me page API call----------
 const aboutMe = "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/pages/118";
-console.log(aboutMe);
+
 const aboutPage = document.querySelector(".post-blogs");
 const loading = document.querySelector(".loader");
 const title = document.querySelector(".tittleInfo");
-console.log(loading);
-console.log(aboutPage);
 
 async function fetchPage() {
   try {
