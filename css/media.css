@@ -460,7 +460,14 @@
 
   .number {
     padding: 0;
-    width: 300px;
+    /* width: 300px; */
+  }
+
+  h3 {
+    font-size: 33px;
+    padding: 5px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .icon-text {
