@@ -390,7 +390,7 @@ h3 {
   margin-bottom: 20px;
   width: 1200px;
   border-radius: 260px 80px;
-  border: 2px solid var(--category-drawing-text);
+  border: 2px solid var(--cta-small-button-border);
 }
 
 .animation-text {
@@ -777,7 +777,7 @@ ul {
   position: relative;
   top: -31px;
   border-radius: 290px 80px;
-  border: 2px solid var(--category-drawing-text);
+  border: 2px solid var(--footer-contact-color-shadow);
   /* border: 2px solid var(--footer-contact-color-shadow); */
 }
 .blog-container {
