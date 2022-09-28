@@ -390,6 +390,8 @@ h3 {
   margin-bottom: 20px;
   width: 1200px;
   border-radius: 260px 80px;
+  padding-top: 15px;
+
   border: 2px solid var(--cta-small-button-border);
 }
 
