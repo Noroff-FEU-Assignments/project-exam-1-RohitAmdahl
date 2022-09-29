@@ -388,12 +388,12 @@ h3 {
 }
 
 .d_render:hover {
-  color: var(--picture-shadow);
+  color: #a2444a;
   transition: ease-in-out 0.2s;
 }
 
 .art:hover {
-  color: var(--picture-shadow);
+  color: #a2444a;
   transition: ease-in-out 0.2s;
 }
 
