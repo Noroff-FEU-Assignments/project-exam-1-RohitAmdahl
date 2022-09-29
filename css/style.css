@@ -309,8 +309,9 @@ h3 {
     28.2px 28.2px 10px rgba(0, 0, 0, 0.071),
     37.2px 37.2px 17.9px rgba(0, 0, 0, 0.078),
     51px 51px 33.4px rgba(0, 0, 0, 0.081), 100px 100px 80px rgba(0, 0, 0, 0.08);
-
   transition: box-shadow 0.5s ease-in-out;
+  transform: scale(1.1);
+  transition: all 1s;
 }
 
 .picture-drawing:hover {
@@ -320,6 +321,8 @@ h3 {
     37.2px 37.2px 17.9px rgba(0, 0, 0, 0.078),
     51px 51px 33.4px rgba(0, 0, 0, 0.081), 100px 100px 80px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.2s ease-in-out;
+  transform: scale(1.1);
+  transition: all 1s;
 }
 
 .slideshow_img {
