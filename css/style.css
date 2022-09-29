@@ -402,11 +402,11 @@ h4 {
   background-color: var(--text_background-color);
   margin-top: 60px;
   margin-bottom: 20px;
-  width: 1200px;
+  width: 1300px;
   border-radius: 260px 80px;
   padding-top: 15px;
 
-  border: 2px solid var(--cta-small-button-border);
+  border: 2px solid var(--main-blog-picture-shadow);
 }
 
 .animation-text {
@@ -452,7 +452,7 @@ ul {
   margin: 20px;
 }
 
-.content {
+/* .content {
   text-align: left;
   font-size: 1.6em;
   margin: 0 auto;
@@ -460,7 +460,7 @@ ul {
   padding: 10px;
   font-weight: bold;
   color: var(--paragraph-heading-font-color);
-}
+} */
 
 .animation {
   display: flex;
@@ -644,6 +644,18 @@ ul {
 
 .contact:hover {
   color: var(--footer-text);
+}
+
+.overviewText_line {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.overviewText {
+  font-size: 20px;
+  /* font-weight: bold; */
+  list-style: disc;
 }
 
 .arrow-footer,
