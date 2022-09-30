@@ -2,6 +2,7 @@ const url = "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?categories=15";
 console.log(url);
 const drafting = document.querySelector(".post-Container");
 const title = document.querySelector(".tittleInfo");
+title.innerHTML = "Design Blog | Drawings/technical drawings";
 const loading = document.querySelector(".loader");
 console.log(drafting);
 
@@ -12,7 +13,6 @@ async function getRenderCategory(url) {
     console.log(getDrafting);
     drafting.innerHTML = " ";
     getDrafting.forEach(function (getResults) {
-      title.innerHTML = `My Blog | ${getResults.title.rendered}`;
       drafting.innerHTML += `<a href="/drawing.html?id=${getResults.id}"><article                  class="blog-artical">
                                     <h1 class="heading-post">${getResults.title.rendered}</h1>
                                     <div class="picture-post">

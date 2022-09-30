@@ -1150,6 +1150,21 @@ label {
   background-position: center;
 }
 
+.successFull {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  display: none;
+}
+
+.formText {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: var(--footer-text);
+  font-weight: bold;
+}
 /* ---------------------------------------------------------art page---------------- */
 .cta-category {
   display: flex;

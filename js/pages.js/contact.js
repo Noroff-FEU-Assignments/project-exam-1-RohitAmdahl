@@ -1,14 +1,9 @@
 //---------all input selected here
 const form = document.querySelector(".formContact");
-// console.log(form);
 const firstName = document.getElementById("firstName");
-// console.log(firstName);
 const subject = document.getElementById("subject");
-// console.log(subject);
 const email = document.getElementById("email");
-// console.log(email);
 const message = document.getElementById("message");
-// console.log(message);
 
 //---------all the error down here
 const firstNameError = document.querySelector(".nameError");
@@ -20,6 +15,11 @@ const messageError = document.querySelector(".messageError");
 const title = document.querySelector(".tittleInfo");
 title.innerHTML = "AD design Blog | Contact";
 //---------------form validation--------------
+
+const successFull = document.querySelector(".formText");
+const successFullMsg = document.querySelector(".successFull");
+// console.log(displayBox);
+//---------
 function validationForm() {
   event.preventDefault();
 
@@ -46,6 +46,20 @@ function validationForm() {
   } else {
     messageError.style.display = "block";
   }
+  if (
+    checkLength(firstName.value, 4) &&
+    validateEmail(email.value) &&
+    checkLength(subject.value, 14) &&
+    checkLength(message.value, 24)
+  ) {
+    firstName.value = "";
+    email.value = "";
+    subject.value = "";
+    message.value = "";
+    successFullMsg.style.display = "block";
+  } else {
+    successFullMsg.style.display = "none";
+  }
 }
 
 form.addEventListener("submit", validationForm);
@@ -63,3 +77,24 @@ function validateEmail(email) {
   const patternMatches = regEx.test(email);
   return patternMatches;
 }
+
+// function displayMassageForm() {
+
+// }
+
+// displayMassageForm();
+
+// const submitBtn = document.querySelector(".cta-submit_form");
+// submitBtn.onclick = () => {
+//   if (
+//     checkLength(firstName.value, 4) === true &&
+//     validateEmail(email.value) === true &&
+//     checkLength(subject.value, 14) === true &&
+//     checkLength(message.value, 24) === true
+//   ) {
+//     displayBox.innerHTML = `<span> Your form has been sent</span>`;
+//   } else {
+//     return "Massage can not displayed";
+//   }
+//   console.log("object");
+// };

@@ -2,6 +2,7 @@ const url = "https://rohitkumar.rkamdahl.no/wp-json/wp/v2/posts?categories=17";
 console.log(url);
 const postRender = document.querySelector(".post-Container");
 const title = document.querySelector(".tittleInfo");
+title.innerHTML = "Design Blog | Art";
 const loading = document.querySelector(".loader");
 console.log(postRender);
 
@@ -13,7 +14,6 @@ async function getRenderCategory(url) {
 
     postRender.innerHTML = " ";
     renders.forEach(function (getArt) {
-      title.innerHTML = `Art Blog | ${getArt.title.rendered}`;
       postRender.innerHTML += `<a href="/art.html?id=${getArt.id}"><article class="blog-artical">
                                     <h1 class="heading-post">${getArt.title.rendered}</h1>
                                     <div class="picture-post">

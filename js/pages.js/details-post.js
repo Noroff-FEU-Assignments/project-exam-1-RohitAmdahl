@@ -63,17 +63,9 @@ async function fetchPost() {
     console.log("close");
   };
   //----------------
-  // trying to find out of 2 model
-  // detailImage.onclick = function () {
-  //   picture.style.display = "grid";
-  //   modelPics.src = this.src;
-  //   console.log([" modelPics.src"]);
-  // };
-
-  // pictureModel.onclick = () => {
-  //   picture.style.display = "none";
-  //   console.log("close");
-  // };
+  // //------ local storage
+  // window.localStorage.setItem("post", "${post.title.rendered}");
+  // //----------------
 
   //-----------------------
 }
