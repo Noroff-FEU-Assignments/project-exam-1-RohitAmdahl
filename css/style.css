@@ -212,6 +212,7 @@ h4 {
   display: none;
   width: 100%;
   max-width: 140px;
+  border-radius: 50%;
   position: absolute;
   box-shadow: 10.4px 10.4px 2.2px rgba(0, 0, 0, 0.038),
     19.7px 19.7px 5.3px rgba(0, 0, 0, 0.058),
