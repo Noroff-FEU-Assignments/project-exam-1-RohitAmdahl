@@ -39,13 +39,8 @@ async function fetchPost() {
 
   //  ----------image model -0--------------------
   const picture = document.getElementById("image-model"); //---div wrapper
-  // const pictureModel = document.getElementById("img-model"); //---div wrapper-2
-
   const modelPic = document.getElementById("model"); //...img tag
-  // const modelPics = document.getElementById("model-1"); //...img tag-2
-
   const image = document.querySelector(".post-picture"); //----api container fetch result
-
   const detailImage = document.querySelector(".blog-container");
   console.log(detailImage); //----api container fetch result-details
 
@@ -62,11 +57,5 @@ async function fetchPost() {
     picture.style.display = "none";
     console.log("close");
   };
-  //----------------
-  // //------ local storage
-  // window.localStorage.setItem("post", "${post.title.rendered}");
-  // //----------------
-
-  //-----------------------
 }
 fetchPost();
