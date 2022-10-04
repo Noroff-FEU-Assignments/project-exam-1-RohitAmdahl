@@ -22,6 +22,9 @@ my website made bytMTML CSS and javascript. i design my own blog website and i m
 - wordpress Rest API.
 - installed hotjar.
 
+## User testing
+feedback from user testing was very nice and my website is very easy to understnd and easy to navigate.design is lovely i posted my website to my Linkedin and in our scholl chat, i got very good comments about my work over all, but there was very few changes i got to suggest by classmates and from linkedin. i change the as i got answer from user. and i am very happy that i did. and website looks perfect. 
+
 ## Contributing
 
 Feel free to suggest improvements and open a pull request if you want to get involved in this project.
