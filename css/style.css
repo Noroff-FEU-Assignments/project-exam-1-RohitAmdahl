@@ -755,6 +755,7 @@ ul {
   margin-right: 25px;
   margin-right: 25px;
   color: var(--footer-text);
+  cursor: pointer;
 }
 .pause-play {
   margin-top: 25px;
