@@ -850,7 +850,6 @@ ul {
   padding: 50px;
   width: 100%;
   margin-top: 25px;
-  background: var(--text_background-color);
   color: var(--paragraph-heading-font-color);
   max-width: 1400px;
   border-radius: 120px 120px;
