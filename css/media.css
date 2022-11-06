@@ -143,7 +143,6 @@
   }
 
   nav {
-    /* background-color: whitesmoke; */
     padding: 4rem;
     position: absolute;
     width: 100%;
@@ -226,12 +225,6 @@
   .architectural_blog {
     max-width: 530px;
     font-size: 0.8em;
-  }
-
-  .picture,
-  .picture-drawing {
-    max-width: 260px;
-    padding: 0;
   }
 
   .art,
@@ -332,11 +325,6 @@
     max-width: 100px;
   }
 
-  .picture,
-  .picture-drawing {
-    max-width: 450px;
-  }
-
   .drawing,
   .art,
   .d_render {
@@ -382,12 +370,6 @@
     flex-direction: column;
   }
 
-  .picture,
-  .picture-drawing {
-    max-width: 300px;
-    padding: 0;
-  }
-
   .arrow-category {
     transform: rotate(90deg);
   }
@@ -413,9 +395,7 @@
   .icon-text {
     padding: 0;
   }
-  /* .thin-arrow {
-    display: none;
-  } */
+
   .footer-logo {
     display: block;
   }
@@ -442,9 +422,7 @@
     height: auto;
     width: auto;
   }
-  /* .cta-category {
-    width: fit-content;
-  } */
+
   .category-heading {
     text-align: center;
   }
@@ -452,7 +430,7 @@
     font-size: 44px;
   }
   .picture {
-    max-width: 325px;
+    max-width: 255px;
     margin-bottom: 25px;
     margin-top: 25px;
   }
@@ -621,11 +599,6 @@
     font-size: 14px;
   }
   .load_more {
-    /* max-width: 150px; */
     font-size: 15px;
-  }
-  .picture,
-  .picture-drawing {
-    transform: scale(0.8);
   }
 }
